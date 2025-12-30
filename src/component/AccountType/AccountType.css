@@ -1,0 +1,187 @@
+ .registeration .account-type .container{
+    max-width: 80%;
+    margin: 0px auto;
+    padding: 0 20px;
+    direction: ltr;
+
+} 
+.account-type .image img{
+  width: 68%;
+  object-fit: contain;
+}
+.shopping-image{
+    background-color: #1D3A77;
+                   width:47%;
+                   height:100%;
+                   border-Radius:12px;
+                   display:flex;
+                   cursor:pointer;
+                   flex-Direction:column;
+                   justify-Content:center;
+                   align-Items:center;
+                   
+}
+.shopping-image img{
+        width: 39px;
+}
+.texting-buyer{
+    font-size: 20px;
+}
+.sellericon{
+margin-left:2%
+
+}
+
+.account-type .form {
+  text-align: right;
+}
+
+/* عنوان */
+.account-title {
+  font-size: 22px;
+  font-weight: 600;
+  color: #000;
+}
+
+/* صف الكروت */
+.options-row {
+  display: flex;
+  gap: 16px;
+}
+
+/* الكارت الأساسي (مش متعلم) */
+.option-card {
+  flex: 1;
+  height: 170px;
+  border-radius: 12px;
+  border: 2px solid #cccccc;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+/* أيقونة */
+.option-icon {
+  width: 40px;
+  height: auto;
+}
+
+/* نص */
+.option-text {
+  margin-top: 8px;
+  font-size: 20px;
+  font-weight: 700;
+  color: #000;
+}
+
+/* حالة التحديد (مشتري أو بائع) */
+.active-option {
+  background-color: #1D3A77;
+  border-color: #1D3A77;
+}
+
+.active-option .option-text {
+  color: #ffffff;
+}
+
+/* لو عايزة الأيقونة تبيض مع الخلفية الزرقا */
+.active-option .option-icon {
+  filter: brightness(0) invert(1);
+}
+
+/* زر التالي */
+.next-btn {
+  background-color: #1D3A77;
+  border-radius: 10px;
+  font-size: 18px;
+  font-weight: 600;
+  border: none;
+  transition: all 0.25s ease;
+}
+
+.next-btn:hover {
+  background-color: #255acb;
+  transform: translateY(-2px);
+}
+
+/* مسافة بسيطة للـ seller */
+.sellericon {
+  margin-left: 2%;
+}
+.account-box {
+  width: 47%;
+  height: 170px;
+  border: 2px solid #cccccc;
+  border-radius: 12px;
+  display: flex;
+  cursor: pointer;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: all .3s ease;
+  background-color: #fff;
+}
+
+.account-box .account-icon {
+  width: 58px;
+  transition: all .3s ease;
+}
+
+/* عند التحديد */
+.account-box.active {
+  background-color: #1D3A77;
+  border-color: #1D3A77;
+}
+
+.account-box.active .option-text {
+  color: #fff !important;
+}
+
+/* تحويل الأيقونة للأبيض */
+.white-icon {
+  filter: brightness(0) invert(1);
+}
+
+.option-text {
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 10px;
+  color: #000;
+}
+
+/* الصف */
+.options-row {
+  display: flex;
+  gap: 2%;
+}
+
+/* موبايل */
+@media (max-width: 768px) {
+  .account {
+    display: none;
+
+  }
+.account-box{
+  width: 100%;
+  margin-bottom: 10px;
+}
+  .options-row {
+    flex-direction: column;
+  }
+
+  .sellericon {
+    margin-left: 0;
+  }
+}
+
+
+@media (max-width: 768px) {
+
+  .account {
+    display: none;      
+  }
+}

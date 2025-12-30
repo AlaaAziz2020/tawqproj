@@ -1,0 +1,109 @@
+.orders-pagenew {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 12%;
+  margin-bottom:15% ;
+  direction: rtl;
+}
+
+/* ===== Tabs Right Side ===== */
+.orders-tabsnew {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 250px;
+}
+
+.tab {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid #eee;
+  font-size: 20px;
+  font-weight: 600;
+  text-align: center;
+  cursor: pointer;
+}
+
+.tab.active {
+  background: #123a8a;
+  color: white;
+}
+
+/* ===== Left Content ===== */
+.orders-contentnew {
+  flex: 1;
+  text-align: center;
+}
+
+.empty-img {
+  width: 300px;
+  margin-top: 30px;
+}
+
+.empty-text {
+  font-size: 22px;
+  font-weight: 600;
+  margin-top: 20px;
+}
+
+
+/* =====================
+   Responsive – للهواتف والأجهزة الصغيرة
+===================== */
+@media (max-width: 992px) {
+  .orders-pagenew {
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 8%;
+    margin-bottom: 10%;
+  }
+
+  .orders-tabsnew {
+    width: 100%;
+    flex-direction: row;
+    overflow-x: auto;
+    gap: 10px;
+  }
+
+  .tab {
+    flex: 1 0 auto;
+    padding: 15px;
+    font-size: 18px;
+  }
+
+  .orders-contentnew {
+    width: 100%;
+    text-align: center;
+  }
+
+  .empty-img {
+    width: 200px;
+    margin-top: 20px;
+  }
+
+  .empty-text {
+    font-size: 18px;
+    margin-top: 15px;
+  }
+}
+
+@media (max-width: 576px) {
+  .orders-tabsnew {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .tab {
+    font-size: 16px;
+    padding: 12px;
+  }
+
+  .empty-img {
+    width: 150px;
+  }
+
+  .empty-text {
+    font-size: 16px;
+  }
+}

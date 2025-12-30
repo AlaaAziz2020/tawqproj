@@ -1,0 +1,254 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: 'tajawal', sans-serif;
+  overflow-x: hidden;
+}
+
+/* ===== FORM ANIMATION WHEN PAGE LOAD ===== */
+.form {
+  animation: slideIn 0.6s ease;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* ===== FORM MAIN ===== */
+.registeration .form {
+  width: 50%;
+  max-width: 100%;
+  text-align: right;
+  padding: 5%;
+  margin: 5% auto;
+}
+
+.form label {
+  font-size: 20px;
+  font-weight: bold;
+  color: #000;
+  text-align: right;
+  padding-bottom: 20px;
+}
+
+/* ===== INPUTS & SELECT ===== */
+.form > input,
+.form > select {
+  text-align: right;
+  background-color: #fafafa;
+  height: 60px;
+  border: 1px solid #E9E9E9;
+  border-radius: 12px;
+  padding-right: 10px;
+  font-size: 18px;
+  margin-bottom: 15px;
+  direction: rtl;
+  transition: all 0.25s ease; /* transition added */
+}
+
+/* On focus */
+.form > input:focus,
+.form > select:focus {
+  border-color: #1D3A77;
+  background-color: #fff;
+  transform: scale(1.01);
+  box-shadow: 0 0 8px rgba(29, 58, 119, 0.15);
+}
+
+/* select arrow custom */
+.form > select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-image: url("data:image/svg+xml;utf8,<svg fill='black' height='14' width='14' viewBox='0 0 20 20' xmlns='http://www.w3.org/2000/svg'><path d='M5 8l5 5 5-5H5z'/></svg>");
+  background-repeat: no-repeat;
+  background-position: left 10px center;
+  cursor: pointer;
+}
+
+/* ===== PHONE INPUT ===== */
+.phone-box {
+  display: flex;
+  gap: 10px;
+}
+
+.phone-box input,
+.phone-box select {
+  flex: 1;
+  height: 48px;
+  border-radius: 8px;
+  border: 1px solid #E5E5E5;
+  background-color: #E5E5E5;
+  text-align: right;
+  font-size: 18px;
+  padding-right: 10px;
+  transition: all 0.25s ease;
+}
+
+.phone-box input:focus,
+.phone-box select:focus {
+  background-color: #fff;
+  border-color: #1D3A77;
+  transform: scale(1.02);
+}
+
+/* ===== PASSWORD BOX ===== */
+.special-password-box {
+  position: relative;
+  width: 100%;
+}
+.special-password-box .fa-eye-slash{
+      position: absolute;
+    left: 3%;
+    top: 35%;
+
+}
+.special-password-input {
+  width: 100%;
+
+  background-color: #fafafa;
+  border: 1px solid #E9E9E9;
+  border-radius: 12px;
+  padding: 5px 40px 17px 10px;
+  font-size: 16px;
+  height: 60px;
+  margin-bottom: 2%;
+  transition: all 0.25s ease;
+}
+
+.special-password-input:focus {
+  background-color: #fff;
+  border-color: #1D3A77;
+  transform: scale(1.01);
+  box-shadow: 0 0 8px rgba(29, 58, 119, 0.15);
+}
+
+.special-pass-icon {
+  position: absolute;
+     left: 21px;
+    top: 42%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: #777;
+  font-size: 18px;
+  transition: color 0.25s ease; /* transition added */
+}
+
+.special-pass-icon:hover {
+  color: #1D3A77;
+}
+
+.registeration input{
+direction: rtl;
+    border: 1px solid #E9E9E9;
+    background: #fafafa;
+    margin-bottom: 17px;
+    padding-bottom: 2px;
+    height: 57px;
+
+
+}
+
+.form-control .country-input,
+.form-control select{
+  direction: rtl;
+}
+
+/* ===== BUTTON ===== */
+.registeration .btn {
+  background-color: #1D3A77;
+  color: #fff;
+  font-size: 20px;
+  border-radius: 10px;
+  padding: 10px 0;
+  width: 100%;
+  border: none;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.registeration .btn:hover {
+  background-color: #255acb;
+  transform: translateY(-2px);
+  box-shadow: 0px 4px 12px rgba(0,0,0,0.15);
+}
+
+/* ===== ACCOUNT LINK ===== */
+.registeration .account-text{
+      font-size: 20px;
+
+}
+.registeration .account-text .link{
+  color: rgb(29, 58, 119);
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: 400;
+  text-decoration: underline;
+  transition: color 0.25s ease;
+}
+
+.registeration .account-text .link:hover {
+  color: #255acb;
+}
+.registeration .country-input .country{
+      direction: rtl;
+
+}
+.phone-row {
+  display: flex;
+  gap: 10px;
+  width: 100%;
+}
+
+/* SELECT الخاص بالكود */
+.phone-code {
+  width: 120px;
+  background: #fafafa !important;
+  border: 1px solid #dcdcdc;
+  padding: 20px 10px !important;
+  border-radius: 8px;
+  font-size: 16px;
+  color: #333;
+}
+
+/* INPUT الخاص بالرقم */
+.phone-input {
+  flex: 1;
+  background: #fafafa !important;
+  border: 1px solid #dcdcdc;
+  padding: 20px 10px !important;
+  border-radius: 8px;
+  font-size: 16px;
+  text-align: right;
+}
+.phone-code-input {
+background-color: #fafafa !important;
+    padding: 11px 5px !important;
+    height: 48px !important;
+    border-radius: 8px !important;
+    width: 19%;
+}
+
+/* ===== MOBILE ===== */
+@media (max-width: 768px) {
+  .registeration .form{
+    width: 100%;        
+    padding-left: 5%; 
+    padding-right: 5%;  
+  }
+
+  .login-image {
+    display: none;      
+  }
+}

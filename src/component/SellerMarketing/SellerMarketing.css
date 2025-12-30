@@ -1,0 +1,159 @@
+.marketing-wrapper {
+  display: flex;
+  flex-direction: row;
+  direction: rtl;
+ 
+  max-width: 1200px;
+  gap: 30px;
+ 
+
+}
+
+/* -------- Sidebar ---------- */
+.marketing-sidebar {
+  width: 23%;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  min-width: 200px;
+}
+
+.side-btn {
+  background: #fff;
+  border: 1px solid #ddd;
+  padding: 15px 12px;
+  border-radius: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  cursor: pointer;
+  gap: 15px;
+  transition: all 0.3s ease;
+}
+
+.side-btn .icon {
+  font-size: 18px;
+}
+
+.side-btn.active {
+  background: #123a8a;
+  color: #fff;
+  border-color: #123a8a;
+}
+
+.side-btn.logout {
+  background: #d22121;
+  color: #fff;
+  border-color: #d22121;
+}
+
+/* -------- Content -------- */
+.marketing-contentt {
+  flex: 1;
+  text-align: center;
+  margin-right: 0;
+}
+
+.marketing-logo {
+  width: 200px;
+  margin-bottom: 25px;
+}
+
+.marketing-title {
+  font-size: 26px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.marketing-text {
+  font-size: 28px;
+  color: #000;
+  margin: 0 auto 40px auto;
+  font-weight: bold;
+  line-height: 36px;
+}
+
+.marketing-btn {
+  background: #123a8a;
+  width: 70%;
+  color: #fff;
+  padding: 14px 0;
+  font-size: 20px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+/* كود الدولة */
+/* .input-group-text,
+select {
+  background-color: #fff !important;
+  border: 1px solid #ddd !important;
+  color: #000;
+}
+
+input,
+select,
+.input-group-text {
+  height: 50px;
+  border-radius: 10px;
+} */
+
+/* -------- Responsive -------- */
+@media (max-width: 1024px) {
+  .marketing-wrapper {
+    flex-direction: column;
+    gap: 20px;
+    /* margin: 5% 10px; */
+    align-items: center;
+    justify-content: center;
+  }
+
+  .marketing-sidebar {
+    width: 100% !important; 
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .side-btn {
+    flex: 1 1 45%;
+    justify-content: center;
+    padding: 12px 10px;
+    font-size: 16px;
+  }
+
+  .marketing-btn {
+    width: 90%;
+    padding: 12px 0;
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 600px) {
+  .side-btn {
+    flex: 1 1 100%;
+    font-size: 15px;
+    padding: 10px 8px;
+    gap: 8px;
+  }
+
+  .marketing-text {
+    font-size: 22px;
+    line-height: 28px;
+  }
+
+  .marketing-btn {
+    width: 100%;
+    font-size: 16px;
+    padding: 10px 0;
+  }
+
+  .marketing-logo {
+    width: 150px;
+  }
+}

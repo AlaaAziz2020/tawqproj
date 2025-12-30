@@ -1,0 +1,51 @@
+.corders-page {
+  padding-top: 150px;
+  padding-bottom: 50px;
+  direction: ltr;
+}
+
+.customer-orders .orders-content {
+  text-align: center;
+  padding: 60px 0;
+
+}
+
+.customer-orders .orders-img {
+width: 46%;
+    margin-bottom: 15px;
+}
+
+.customer-orders .orders-text {
+  font-size: 20px;
+  color: #666;
+}
+
+.customer-orders .orders-tabs {
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  margin-top: 50px;
+  margin-bottom: 90px;
+}
+
+.customer-orders .tab-btn {
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 24px;
+    background: #fff;
+    border: 1px solid #E9E9E9;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-top: 8%;
+    font-weight: bold;
+
+}
+
+.customer-orders .tab-btn.active {
+     background: #1D3A77;
+    color: #fff;
+    border-color: #10397A;
+    font-size: 24px;
+    font-weight: bold;
+}

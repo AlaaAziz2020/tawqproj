@@ -1,0 +1,33 @@
+/* الصفحة كلها RTL */
+.related-container {
+  display: flex;
+  direction: rtl;
+  gap: 30px;
+  padding: 40px 50px;
+}
+
+/* صندوق الفلاتر (على الشمال) */
+.sidebar-fixed {
+  width: 330px;         /* نفس عرض Figma */
+  flex-shrink: 0;
+}
+
+/* الــ Box نفسه */
+.filter-box {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 25px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.12);
+}
+
+/* المنتجات (يمين) */
+.products-content {
+  flex: 1;
+  padding-top: 10px;
+}
+
+/* سطر تحت الـ sidebar */
+.filter-box hr {
+  margin-top: 35px;
+  border-color: #eee;
+}

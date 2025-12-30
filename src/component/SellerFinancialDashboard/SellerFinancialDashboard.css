@@ -1,0 +1,235 @@
+/* صفحة الحسابات المالية */
+.fin-page {
+  min-height: 100vh;
+  background: #f5f6fa;
+  padding: 67px 16px 40px;
+  direction: rtl;
+  font-family: "Tajawal", system-ui, sans-serif;
+}
+
+.fin-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* ====== Breadcrumb ====== */
+
+.fin-breadcrumb {
+    font-size: 22px;
+    color: #9e9e9e;
+    margin-bottom: 8px;
+
+}
+
+.fin-breadcrumb-main {
+  cursor: pointer;
+      font-size: 27px;
+
+}
+
+.fin-breadcrumb-sep {
+  margin: 0 4px;
+}
+
+.fin-breadcrumb-current {
+  color: #1d3a77;
+  font-weight: 600;
+}
+
+/* ====== Title ====== */
+
+.fin-page-title {
+  font-size: 26px;
+  font-weight: 700;
+  color: #1d3a77;
+  margin-bottom: 24px;
+}
+
+/* ====== Summary Card ====== */
+
+.fin-summary-card {
+  width: 100%;
+  background: linear-gradient(90deg, #ffa733, #ff7a00);
+  border-radius: 24px;
+  padding: 20px 28px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 24px;
+  color: #fff;
+}
+
+.fin-summary-text {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.fin-summary-label {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.fin-summary-amount {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.fin-summary-icon {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+}
+
+.fin-summary-icon span {
+  color: #ff7a00;
+  font-size: 26px;
+  font-weight: 700;
+}
+
+/* ====== Chart Card ====== */
+
+.fin-chart-card {
+  background: #ffffff;
+  border-radius: 18px;
+  padding: 24px 20px 28px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
+}
+
+.fin-chart-title {
+  font-size: 18px;
+  font-weight: 700;
+  color: #1d3a77;
+  margin-bottom: 20px;
+}
+
+/* Wrapper */
+.fin-chart-wrapper {
+  display: flex;
+  gap: 16px;
+}
+
+/* Y Axis */
+.fin-chart-yaxis {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  font-size: 12px;
+  color: #444;
+  padding-top: 8px;
+  padding-bottom: 4px;
+}
+
+/* Bars container */
+.fin-chart-bars {
+  flex: 1;
+  display: flex;
+  align-items: flex-end;
+  gap: 16px;
+  border-left: 2px solid #000000;
+  border-bottom: 2px solid #000000;
+  padding: 8px 12px 0 8px;
+}
+
+/* Each column */
+.fin-chart-bar-col {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+/* The bar itself */
+.fin-chart-bar {
+  width: 60%;
+  background: #ff7a00;
+  border-radius: 8px 8px 0 0;
+  height: var(--bar-height, 40%);
+  transition: height 0.3s ease;
+}
+
+/* Month label */
+.fin-chart-month {
+  font-size: 12px;
+  color: #444;
+}
+
+/* ====== RESPONSIVE ====== */
+
+@media (max-width: 991px) {
+  .fin-page {
+    padding-top: 100px;
+  }
+
+  .fin-summary-card {
+    border-radius: 18px;
+    padding: 16px 18px;
+  }
+
+  .fin-summary-amount {
+    font-size: 22px;
+  }
+
+  .fin-summary-icon {
+    width: 56px;
+    height: 56px;
+  }
+}
+
+@media (max-width: 768px) {
+  .fin-page {
+    padding: 96px 12px 32px;
+  }
+
+  .fin-page-title {
+    font-size: 22px;
+  }
+
+  .fin-summary-card {
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .fin-chart-wrapper {
+    flex-direction: column-reverse;
+  }
+
+  .fin-chart-yaxis {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+
+  .fin-chart-bars {
+    border-left: none;
+    border-right: 2px solid #000;
+    padding-right: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .fin-summary-card {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .fin-summary-icon {
+    align-self: flex-end;
+  }
+
+  .fin-chart-bars {
+    gap: 10px;
+  }
+
+  .fin-chart-bar {
+    width: 70%;
+  }
+}

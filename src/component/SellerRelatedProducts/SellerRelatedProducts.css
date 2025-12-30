@@ -1,0 +1,169 @@
+/* =====================================
+   Seller Related Products — FINAL FIXED
+   ===================================== */
+
+
+.mystorepage {
+
+  padding-top: 8%;
+  margin: 5px;
+}
+
+/* ---------- Main Section ---------- */
+.sellerrelated-section {
+  max-width: 1200px;
+     direction: rtl;
+  margin-top: 80px !important;
+  padding: 0 16px;
+  box-sizing: border-box;
+}
+
+/* ---------- Header ---------- */
+.related-header {
+display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 32px;
+    width: 100%;
+    direction: rtl;             
+}
+
+.related-title {
+  font-size: 22px;
+  font-weight: 700;
+  color: #0A2A57;
+  margin: 0;
+}
+
+.related-view-btn {
+  padding: 8px 18px;
+  background: #ffffff;
+  border: 1px solid #CBD5E1;
+  border-radius: 25px;
+  font-size: 14px;
+  color: #0A2A57;
+  text-decoration: none;
+  transition: 0.3s;
+  font-weight: 600;
+}
+
+.related-view-btn:hover {
+  background: #0A2A57;
+  color: #ffffff;
+  border-color: #0A2A57;
+  transform: translateY(-2px);
+}
+
+/* ---------- Cards Grid ---------- */
+.related-cards {
+display: grid
+;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    width: 93%;
+
+}
+
+/* ---------- Card ---------- */
+.related-card {
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  overflow: hidden;
+  text-decoration: none;
+  color: #000;
+  transition: 0.2s;
+}
+
+.related-card:hover {
+  transform: translateY(-6px);
+}
+
+.related-card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+
+.related-card h4 {
+  margin: 12px;
+  font-size: 18px;
+  font-weight: 700;
+  color: #0A2A57;
+}
+
+.desc {
+  margin: 0 12px;
+  font-size: 14px;
+  color: #555;
+  line-height: 1.4;
+}
+
+.price {
+  margin: 12px;
+  font-size: 15px;
+  font-weight: 700;
+  color: #E63946;
+}
+
+/* ---------- Tablet ---------- */
+@media (max-width: 1023px) {
+  .related-cards {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+  }
+
+  .related-card img {
+    height: 200px;
+  }
+
+  .related-title {
+    font-size: 20px;
+  }
+}
+
+/* ---------- Small Tablets / Large Phones ---------- */
+@media (max-width: 767px) {
+  .sellerrelated-section {
+    margin: 24px auto;
+  }
+
+  .related-cards {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 14px;
+  }
+
+  .related-card img {
+    height: 180px;
+  }
+
+  .related-title {
+    font-size: 18px;
+  }
+
+  .related-view-btn {
+    font-size: 13px;
+    padding: 7px 14px;
+  }
+}
+
+/* ---------- Mobile ---------- */
+@media (max-width: 480px) {
+  .related-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .related-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .related-card img {
+    height: 170px;
+  }
+
+  .related-title {
+    font-size: 17px;
+  }
+}

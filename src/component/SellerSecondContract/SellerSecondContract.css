@@ -1,0 +1,272 @@
+.contract-content {
+  flex: 1;
+  margin-right: 60px;
+  direction: rtl;
+  margin-top: 4%;
+}
+
+/* ------- Rating Box ------- */
+.rate-box {
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  border: 1px solid #eee;
+  margin-bottom: 30px;
+}
+
+.rate-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.rate-header h1 {
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.rate-number {
+  font-size: 20px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.rate-number img {
+  width: 20px;
+}
+
+/* Each Rating Row */
+.rate-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+  margin-bottom: 10px;
+  direction: ltr;
+}
+
+.rate-percentage {
+  font-size: 16px;
+  font-weight: 600;
+  width: 45px;
+  text-align: right;
+}
+
+.rate-label {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 16px;
+  width: 85px;
+  white-space: nowrap;
+}
+
+.rate-label img {
+  width: 20px;
+}
+
+/* Progress Bar */
+.rate-progress {
+  height: 10px;
+  flex: 1;
+  background: #d9d9d9;
+  border-radius: 50px;
+  overflow: hidden;
+}
+
+.rate-progress span {
+  display: block;
+  height: 100%;
+  background: #123a8a;
+  border-radius: 50px;
+}
+
+/* ------- Contract Section ------- */
+.contract-title {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+/* Inline Input Style */
+.input-inline {
+  background: #f8f8f8;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 14px 18px;
+  margin-bottom: 20px;
+}
+
+.date-inline-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  direction: rtl;
+}
+
+.date-label-inline {
+  font-size: 17px;
+  font-weight: 600;
+}
+
+.date-value-inline {
+  font-size: 18px;
+  font-weight: 500;
+  color: #9e9e9e;
+}
+
+/* Button */
+.renew-btn {
+  width: 100%;
+  background: #1D3A77;
+  color: #fff;
+  padding: 15px;
+  border-radius: 10px;
+  border: none;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* ============================
+   RESPONSIVE — CONTRACT PAGE
+============================ */
+
+/* 1024px */
+@media (max-width: 1024px) {
+
+  .profile-wrapperr {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    text-align: center;
+  }
+
+  .contract-content {
+    margin-right: 0;
+    width: 100%;
+  }
+
+  .rate-box,
+  .contract-dates {
+    width: 100%;
+  }
+
+  .rate-row {
+    gap: 10px;
+  }
+
+  .rate-label {
+    width: 70px;
+    font-size: 14px;
+  }
+
+  .rate-percentage {
+    width: 40px;
+    font-size: 14px;
+  }
+
+  .rate-progress {
+    height: 8px;
+  }
+}
+
+/* 768px — Tablet */
+@media (max-width: 768px) {
+
+  .profile-wrapperr {
+    gap: 20px;
+  }
+
+  .rate-box {
+    padding: 16px;
+  }
+
+  .rate-header h1 {
+    font-size: 18px;
+  }
+
+  .rate-number {
+    font-size: 18px;
+  }
+
+  .rate-label,
+  .rate-percentage {
+    font-size: 14px;
+  }
+
+  .contract-title {
+    font-size: 18px;
+  }
+
+  .input-inline {
+    padding: 12px;
+  }
+
+  .renew-btn {
+    padding: 12px;
+    font-size: 18px;
+  }
+
+  .date-inline-content {
+    flex-direction: column;
+    gap: 8px;
+    text-align: center;
+  }
+}
+
+/* 480px — Mobile */
+@media (max-width: 480px) {
+
+  .rate-box,
+  .contract-dates {
+    padding: 14px;
+  }
+
+  .rate-header {
+    flex-direction: column;
+    gap: 6px;
+  }
+
+  .rate-number img {
+    width: 18px;
+  }
+
+  .rate-row {
+    flex-direction: column;
+    align-items: flex-start;
+    direction: rtl;
+    gap: 6px;
+  }
+
+  .rate-label {
+    width: auto;
+    font-size: 13px;
+  }
+
+  .rate-percentage {
+    font-size: 13px;
+  }
+
+  .rate-progress {
+    width: 100%;
+    height: 6px;
+  }
+
+  .contract-title {
+    font-size: 16px;
+  }
+
+  .date-label-inline,
+  .date-value-inline {
+    font-size: 15px;
+  }
+
+  .renew-btn {
+    padding: 10px;
+    font-size: 16px;
+  }
+}

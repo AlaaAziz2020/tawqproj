@@ -1,0 +1,188 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: 'tajawal', sans-serif;
+  overflow-x: hidden;
+}
+
+ .registeration .form {
+  width: 50%;
+  max-width: 100%;
+  text-align: right;
+  /* padding: 5%; */
+  margin: auto;
+} 
+.registeration .image img{
+width: 92%;
+object-fit: cover;
+}
+.form label {
+  font-size: 20px;
+  font-weight: bold;
+  color: #000;
+  text-align: right;
+  padding-bottom: 5px;
+}
+
+/* جميع الحقول input و select */
+.form > input,
+.form > select{
+  text-align: right;
+  background-color: #E5E5E5;
+  height: 48px;
+  border: 1px solid #E5E5E5;
+  border-radius: 8px;
+  padding-right: 10px;
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+ input {
+    text-align: right;
+  background-color: #fafafa;
+  height: 48px;
+  border: 1px solid #E9E9E9;
+  border-radius: 8px;
+  padding-right: 10px;
+  font-size: 18px;
+  margin-bottom: 15px;
+  width: 100%;
+}
+  .special-pass-icon {
+    position: absolute;
+    left: 5%;
+    /* bottom: -66%; */
+    text-align: right;
+    margin-top: 5px;
+
+}
+/* select arrow custom */
+.form > select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-image: url("data:image/svg+xml;utf8,<svg fill='black' height='14' width='14' viewBox='0 0 20 20' xmlns='http://www.w3.org/2000/svg'><path d='M5 8l5 5 5-5H5z'/></svg>");
+  background-repeat: no-repeat;
+  background-position: left 10px center;
+  cursor: pointer;
+}
+
+/* phone input container */
+.phone-box {
+  display: flex;
+  gap: 10px;
+}
+
+.phone-box input,
+.phone-box select {
+  flex: 1;
+  height: 48px;
+  border-radius: 8px;
+  border: 1px solid #E5E5E5;
+  background-color: #E5E5E5;
+  text-align: right;
+  font-size: 18px;
+  padding-right: 10px;
+}
+.keyphone{
+      height: 61px;
+
+}
+
+/* code dropdown */
+.code-box {
+  flex: 0 0 100px;
+  background: #E5E5E5;
+  border-radius: 8px;
+  border: 1px solid #E5E5E5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  position: relative;
+}
+
+.codes-list {
+  position: absolute;
+  top: 50px;
+  right: 0;
+  width: 100px;
+  max-height: 200px;
+  overflow-y: auto;
+  background: white;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  z-index: 200;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.codes-list li {
+  padding: 6px 8px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.codes-list li:hover {
+  background: #eee;
+}
+
+/* button */
+.registeration .btn {
+  background-color: #1D3A77;
+  color: #fff;
+  font-size: 20px;
+  border-radius: 10px;
+  padding: 10px 0;
+  width: 100%;
+  border: none;
+  font-weight: 600;
+}
+
+.registeration .btn:hover {
+  background-color: #255acb;
+}
+
+/* responsiveness */
+
+@media (max-width: 768px) {
+  .registeration .form{
+    width: 100%;        
+    padding:20px; 
+    /* padding-right: 5%;   */
+  }
+
+  .login-image {
+    display: none;      
+  }
+  .keyphone{
+ 
+        height: 59px;
+        
+  }
+   .form label {
+    font-size: 16px;
+  }
+
+  input {
+    font-size: 16px;
+  }
+
+  .registeration .btn {
+    font-size: 18px;
+  }
+    .phone-box {
+    flex-direction: column;
+  }
+
+  .code-box {
+    width: 100%;
+  }
+  .city-input{
+    height: 100px;
+  }
+}

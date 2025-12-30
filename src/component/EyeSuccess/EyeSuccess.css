@@ -1,0 +1,15 @@
+.successcase{
+    width: 49%;
+    margin: auto;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+.success-heading{
+font-size: 30px;
+font-weight: bold;
+}
+.success-text{
+font-size: 20px;
+font-weight: 400;
+}

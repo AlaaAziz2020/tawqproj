@@ -1,0 +1,84 @@
+.logout-wrapper {
+  display: flex;
+  direction: rtl;
+  margin-top: 6%;
+  margin-bottom: 10%;
+
+}
+
+/* نفس فكرة الصفحات التانية: المحتوى على الشمال */
+.logout-content {
+  flex: 1;
+  margin-right: 60px;
+  text-align: center;
+ 
+}
+
+/* عنوان "هل تريد تسجيل الخروج؟" */
+.logout-title {
+  font-size: 32px;
+  font-weight: 700;
+  margin-top: 80px;
+  margin-bottom: 30px;
+}
+.marketing-sidebarr {
+  width: 23%;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  min-width: 200px;
+}
+/* زر تسجيل الخروج */
+.logout-main-btn {
+  background: #d22121;
+  color: #fff;
+  border: none;
+  border-radius: 12px;
+  font-size: 20px;
+  padding: 14px 80px;
+  cursor: pointer;
+}
+
+/* لو حابة تبيني إن زر تسجيل الخروج في الـ sidebar هو المختار */
+.active-logout {
+  background: #d22121;
+  color: #fff;
+  border-color: #d22121;
+}
+
+/* -------- Responsive -------- */
+@media (max-width: 1024px) {
+  .logout-wrapper {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* margin: 6% 10% 10% 10%; خففنا الهوامش الجانبية */
+  }
+
+  .logout-content {
+    margin-right: 0; /* المحتوى يجي في الوسط بدون كسر التصميم */
+    text-align: center;
+  }
+   .marketing-sidebarr {
+    width: 100% !important; 
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+
+}
+
+@media (max-width: 600px) {
+  .logout-title {
+    font-size: 28px; /* تصغير بسيط للنص */
+    margin-top: 50px;
+    margin-bottom: 25px;
+  }
+
+  .logout-main-btn {
+    width: 90%; /* الزر ياخد عرض مناسب على الموبايل */
+    padding: 12px 0;
+    font-size: 18px;
+  }
+}

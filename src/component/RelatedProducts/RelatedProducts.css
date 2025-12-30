@@ -1,0 +1,155 @@
+
+.related-section {
+  direction: rtl;
+  margin: 0 20px;     
+  margin-bottom: 60px;
+  
+}
+
+.related-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2%;
+    flex-wrap: wrap;
+    padding-right: 1%;
+
+
+}
+
+.related-header h3 {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 10px;
+      padding-right: 2%;
+
+}
+
+.more-btn {
+  border: none;
+  background: none;
+  color: #2643a4;
+  font-weight: 600;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+/* grid */
+.related-cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+    width: 94%;
+    margin-right: 2%;  
+}
+
+.related-card {
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  overflow: hidden;
+  transition: 0.2s;
+    text-decoration: none;
+color:#000
+}
+
+.related-card:hover {
+  transform: translateY(-6px);
+}
+
+.related-card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+
+.related-card h4 {
+  margin: 12px;
+  font-size: 18px;
+}
+
+.desc {
+    margin: 0 12px;
+    color: #000;
+    font-size: 16px;
+    font-weight: 400;
+
+}
+
+.price {
+  margin: 15px 12px;
+  color: #e63946;
+  font-weight: 700;
+  font-size: 16px;
+}
+.related-view-btn {
+  display: inline-block;
+  padding: 8px 22px;
+  background: #fff;
+  border: 1px solid #CBD5E1;   /* رمادي فاتح */
+  border-radius: 25px;
+  font-size: 14px;
+  color: #0A2A57;              /* الأزرق الأساسي */
+  text-decoration: none;
+  transition: 0.3s;
+    font-size: 24px;
+    font-weight: 400;
+      margin-left: 5%;
+}
+
+.related-view-btn:hover {
+  background: #0A2A57;
+  color: #fff;
+  border-color: #0A2A57;
+  transform: translateY(-2px);
+}
+
+/* --- Responsive --- */
+
+/* Tablets */
+@media (max-width: 1024px) {
+  .related-cards {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+}
+
+/* Small tablets / large phones */
+@media (max-width: 768px) {
+  .related-section {
+    margin: 20px 30px;
+  }
+  .related-cards {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+  }
+  .related-header h3 {
+    font-size: 24px;
+  }
+  .more-btn {
+    font-size: 14px;
+  }
+}
+
+/* Mobile phones */
+@media (max-width: 480px) {
+  .related-section {
+    margin: 15px 15px;
+  }
+  .related-cards {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+  .related-card img {
+    height: 180px;
+  }
+  .related-card h4 {
+    font-size: 16px;
+  }
+  .desc {
+    font-size: 13px;
+  }
+  .price {
+    font-size: 15px;
+  }
+}

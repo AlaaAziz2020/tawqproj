@@ -1,0 +1,9 @@
+.sellermorerelated {
+    margin-top: 5%;
+    padding-bottom: 5%;
+}
+@media (max-width: 768px) {
+    .sellermorerelated .related-section{
+    margin-top: 8%;
+}
+}

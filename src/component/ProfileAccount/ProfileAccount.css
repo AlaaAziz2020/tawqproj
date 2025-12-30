@@ -1,0 +1,488 @@
+.cprofile-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  direction: rtl;
+  margin-top: 40%;
+  margin-bottom: 10%;
+  gap: 40px;
+}
+
+.cmarketing-sidebar {
+    width: 29%;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+.cprofilemarketing-sidebar {
+    width: 28%;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+.profileside-btn {
+  background: #fff;
+  border: 1px solid #ddd;
+  padding: 18px 16px;
+  border-radius: 10px;
+  font-size: 20px;
+  text-align: right;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.side-btn.active { 
+     background: #1D3A77;
+    color: #fff;
+    font-size: 20px;
+}
+.side-btn.logout { background: #d22121; color: #fff; }
+
+.profile-content {
+  flex: 1;
+  margin-right: 60px;
+}
+
+.profile-avatar-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.avatar-circle {
+  position: relative;
+  width: 170px;
+  height: 170px;
+}
+
+.profile-avatar {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.avatar-edit-btn {
+  position: absolute;
+  bottom: 8px;
+  left: 50%;
+  transform: translateX(40%);
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  border: none;
+  background: #ff580e;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.profile-form {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: right;
+}
+
+.form-group { margin-bottom: 18px; }
+.form-input {
+  width: 100%;
+  padding: 14px 55px;
+  border-radius: 10px;
+  border: 1px solid #e9e9e9;
+  background: #f8f8f8;
+}
+
+.phone-box {
+  display: flex;
+  gap: 10px;
+}
+
+.phone-box input {
+  flex: 1;
+  height: 48px;
+  border-radius: 8px;
+  border: 1px solid #E5E5E5;
+  background-color: #E5E5E5;
+  text-align: right;
+  font-size: 18px;
+  padding-right: 10px;
+}
+
+.pcode-box {
+  flex: 0 0 100px;
+  background: #E5E5E5;
+  border-radius: 8px;
+  border: 1px solid #E5E5E5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  position: relative;
+  z-index: 10;
+}
+
+.codes-list {
+  position: absolute;
+  top: 50px;
+  right: 0;
+  width: 100px;
+  max-height: 200px;
+  overflow-y: auto;
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  z-index: 100;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.codes-list li {
+  padding: 6px 8px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.codes-list li:hover { background: #eee; }
+
+.social-row { display: flex; align-items: center; gap: 10px; }
+.social-input-box { flex: 1; position: relative; }
+.input-icon { position: absolute; top: 50%; right: 15px; width: 22px; transform: translateY(-50%); }
+
+.save-wrapper {  margin-top: 25px; }
+.save-btn { background: #FF580E; color: #fff; border: none; border-radius: 12px; 
+  font-size: 20px; padding: 7px 2px; cursor: pointer; width: 100%; max-width: 150px; }
+/* ===== PHONE INPUT FIXED ===== */
+
+.phone-box {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.pcode-box {
+      margin-right: 10px;
+    margin-right: 10px;
+    width: 110px;
+    height: 46px;
+    background: #f8f8f8;
+    border: 1px solid #D9D9D9;
+    border-radius: 12px;
+    display: flex
+;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 14px;
+  cursor: pointer;
+  position: relative;
+}
+
+.code-text {
+  font-size: 17px;
+  font-weight: 500;
+  color: #555;
+}
+.cmarketing-text {
+    font-size: 24px;
+    color: #000;
+    margin: 0 auto 40px auto;
+    font-weight: bold;
+    line-height: 36px;
+}
+.arrow {
+  font-size: 14px;
+  margin-top: 2px;
+  color: #555;
+}
+
+.phone-input {
+  flex: 1;
+  height: 52px;
+  padding-right: 18px;
+  background: #FAFAFA;
+  border: 1px solid #D9D9D9;
+  border-radius: 12px;
+  font-size: 17px;
+  color: #444;
+  text-align: right;
+}
+
+.codes-list {
+  position: absolute;
+  top: 55px;
+  right: 0;
+  width: 110px;
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  z-index: 50;
+  max-height: 180px;
+  overflow-y: auto;
+}
+
+.codes-list li {
+  padding: 8px 10px;
+  text-align: center;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.codes-list li:hover {
+  background: #f2f2f2;
+}
+.profilephone-box{
+  display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    /* background: #e9e9e9; */
+    border-radius: 12px;
+    overflow: hidden;
+    /* border: 1px solid #ddd; */
+    height: 55px;
+}
+/* ===== Responsive ===== */
+/* Responsive for Mobile (max-width: 767px) */
+@media (max-width: 767px) {
+  .profile-wrapper {
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center elements horizontally */
+    gap: 20px; /* Reduce the gap between sections for smaller screens */
+    margin: 20px auto; /* Adjust margins for a cleaner layout */
+  }
+
+  .marketing-sidebar {
+    width: 100%; /* Full width for smaller screens */
+    flex-direction: row; /* Row layout for the buttons */
+    flex-wrap: wrap; /* Wrap buttons into multiple rows if needed */
+    justify-content: center; /* Center items within the available space */
+    gap: 10px; /* Reduce spacing for better compactness */
+    margin-bottom: 20px; /* Adjust bottom margin for cleaner spacing */
+  }
+
+  .profilemarketing-sidebar {
+    width: 100%; /* Ensure it also spans full width */
+    flex-direction: column; /* Keep vertical stacking to differentiate it from the buttons */
+    gap: 10px;
+  }
+
+  .profileside-btn {
+    font-size: 16px; /* Adjust font size for smaller screens */
+    padding: 10px 12px; /* Reduce padding to occupy less screen space */
+    text-align: center; /* Center-align text for better alignment */
+  }
+
+  .side-btn {
+    flex: 1 1 100%; /* Ensure buttons are full-width */
+    font-size: 14px; /* Reduce font size for smaller screens */
+    padding: 12px; /* Adjust padding for compactness */
+  }
+
+  .avatar-circle {
+    width: 130px; /* Adjust avatar size */
+    height: 130px;
+  }
+
+  .profile-content {
+    margin-right: 0; /* Remove side margin for proper alignment */
+    width: 100%; /* Make it occupy full width of the screen */
+  }
+
+  .form-input {
+    padding: 12px 40px; /* Adjust padding */
+    font-size: 14px; /* Smaller text on mobile */
+  }
+
+  .save-wrapper {
+    text-align: center; /* Center-align save button */
+  }
+
+  .save-btn {
+    font-size: 16px; /* Adjust button font size */
+    padding: 12px; /* Smaller padding to fit screen */
+  }
+
+  .profile-avatar-wrapper {
+    margin-bottom: 20px; /* Adjust bottom margin */
+  }
+
+  .phone-box {
+    gap: 8px; /* Reduce spacing in the phone input wrapper */
+  }
+
+  .pcode-box,
+  .phone-input {
+    font-size: 14px; /* Adjust font sizes inside phone input */
+  }
+}
+/* Responsive for Tablets (max-width: 768px) */
+@media (max-width: 768px) {
+  .profile-wrapper {
+    flex-direction: column; /* Stack items vertically on tablet */
+    align-items: center; /* Center align content */
+    gap: 30px; /* Maintain spacing appropriate for tablet screens */
+    margin: 30px auto; /* Centralize with balanced margins */
+  }
+
+  .marketing-sidebar {
+    width: 100%; /* Full width for sidebar on tablet */
+    flex-direction: row; /* Allow items to sit side by side */
+    flex-wrap: wrap; /* Wrap if content overflows in one row */
+    justify-content: center; /* Center buttons within the viewport */
+    gap: 15px; /* Add balanced spacing between buttons */
+    margin-bottom: 20px; /* Adjust bottom margin for tidy layout */
+  }
+
+  .profilemarketing-sidebar {
+    width: 100%; /* Full width for second sidebar layout on tablet */
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    gap: 15px;
+  }
+
+  .profileside-btn {
+    font-size: 18px; /* Slightly larger for tablet readability */
+    padding: 12px 16px; /* Balanced padding for tap targets */
+    text-align: center; /* Center text alignment */
+  }
+
+  .side-btn {
+    flex: 1 1 48%; /* Set each button to occupy half the row */
+    font-size: 16px; /* Adjusted font size for tablets */
+    padding: 14px; /* Adequate padding for readability */
+  }
+
+  .profile-avatar-wrapper {
+    justify-content: center;
+    margin-bottom: 25px; /* Adjust bottom margin for clearer spacing */
+  }
+
+  .avatar-circle {
+    width: 150px; /* Smaller avatar for tablets */
+    height: 150px;
+  }
+
+  .profile-content {
+    width: 100%; /* Full width for the profile content */
+    margin-right: 0; /* Remove right margin */
+  }
+
+  .profile-form {
+    max-width: 600px; /* Keep form width centered and readable */
+    margin: 0 auto;
+  }
+
+  .form-input {
+    padding: 12px 45px; /* Adjust spacing within inputs */
+    font-size: 16px; /* Font size for visibility */
+  }
+
+  .save-wrapper {
+    text-align: center;
+  }
+
+  .save-btn {
+    font-size: 18px; /* Slightly larger for buttons */
+    padding: 14px 20px; /* Ensure the button is prominently visible */
+    max-width: 180px; /* Wider button for tablet users */
+  }
+
+  .phone-box {
+    gap: 10px; /* Slightly reduce the gap for compact form alignment */
+  }
+
+  .pcode-box,
+  .phone-input {
+    padding: 10px; /* Consistent padding for phone inputs */
+    font-size: 16px; /* Ensure input text is readable */
+  }
+}
+@media (max-width: 1024px) {
+  .profile-wrapper { flex-direction: column; align-items: center; margin: 40px 20px; }
+  .profile-content { margin-right: 0; width: 100%; }
+  .marketing-sidebar { width: 100%; flex-direction: row; flex-wrap: wrap; justify-content: center; gap: 10px; margin-bottom: 30px; }
+  .side-btn { flex: 1 1 45%; font-size: 18px; padding: 14px }
+}
+
+/* Responsive for Mobile (max-width: 767px) */
+@media (max-width: 767px) {
+  .profile-wrapper {
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center elements horizontally */
+    gap: 20px; /* Reduce the gap between sections for smaller screens */
+    margin: 20px auto; /* Adjust margins for a cleaner layout */
+  }
+
+  .marketing-sidebar {
+    width: 100%; /* Full width for smaller screens */
+    flex-direction: row; /* Row layout for the buttons */
+    flex-wrap: wrap; /* Wrap buttons into multiple rows if needed */
+    justify-content: center; /* Center items within the available space */
+    gap: 10px; /* Reduce spacing for better compactness */
+    margin-bottom: 20px; /* Adjust bottom margin for cleaner spacing */
+  }
+
+  .profilemarketing-sidebar {
+    width: 100%; /* Ensure it also spans full width */
+    flex-direction: column; /* Keep vertical stacking to differentiate it from the buttons */
+    gap: 10px;
+  }
+
+  .profileside-btn {
+    font-size: 16px; /* Adjust font size for smaller screens */
+    padding: 10px 12px; /* Reduce padding to occupy less screen space */
+    text-align: center; /* Center-align text for better alignment */
+  }
+
+  .side-btn {
+    flex: 1 1 100%; /* Ensure buttons are full-width */
+    font-size: 14px; /* Reduce font size for smaller screens */
+    padding: 12px; /* Adjust padding for compactness */
+  }
+
+  .avatar-circle {
+    width: 130px; /* Adjust avatar size */
+    height: 130px;
+  }
+
+  .profile-content {
+    margin-right: 0; /* Remove side margin for proper alignment */
+    width: 100%; /* Make it occupy full width of the screen */
+  }
+
+  .form-input {
+    padding: 12px 40px; /* Adjust padding */
+    font-size: 14px; /* Smaller text on mobile */
+  }
+
+  .save-wrapper {
+    text-align: center; /* Center-align save button */
+  }
+
+  .save-btn {
+    font-size: 16px; /* Adjust button font size */
+    padding: 12px; /* Smaller padding to fit screen */
+  }
+
+  .profile-avatar-wrapper {
+    margin-bottom: 20px; /* Adjust bottom margin */
+  }
+
+  .phone-box {
+    gap: 8px; /* Reduce spacing in the phone input wrapper */
+  }
+
+  .pcode-box,
+  .phone-input {
+    font-size: 14px; /* Adjust font sizes inside phone input */
+  }
+}
+
+@media (max-width: 480px) {
+  .avatar-circle { width: 120px; height: 120px; }
+  .form-input { padding: 10px 35px; font-size: 14px; }
+  .side-btn { font-size: 14px; padding: 10px; }
+}

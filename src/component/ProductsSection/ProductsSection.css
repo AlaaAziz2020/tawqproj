@@ -1,0 +1,286 @@
+/* *** ProductsSection.css *** */
+/* Clean, defensive, responsive CSS for product cards and categories */
+
+/* Reset box sizing */
+* { 
+  box-sizing: border-box; 
+
+padding: 0;
+margin:0
+}
+
+body {
+  color: #000;
+}
+.row{
+  padding-top: 0;
+
+}
+.products-wrapper {
+  padding-bottom: 30px;
+  padding-top: 1%;
+}
+
+/* Header */
+.ccustomer-products-header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  direction: rtl;
+  gap: 12px;
+}
+
+.customer-products-title {
+  font-size: 20px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.customer-view-more {
+  color: #1D3A77;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+/* Product Grid */
+.customer-products-grid {
+  margin-top: 16px;
+  padding: 0 12px;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+  direction: rtl;
+}
+
+/* ---------- Product Card ---------- */
+.customer-product-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+  position: relative;
+  border: 1px solid #E9E9E9;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  min-height: 320px;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.customer-product-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+}
+
+/* Image */
+.customer-product-img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  display: block;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+
+/* Card Body */
+.customer-card-body {
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  flex: 1;
+}
+
+.customer-product-name {
+  font-size: 16px;
+  font-weight: 700;
+  color: #111;
+  margin: 0;
+}
+
+.customer-desc {
+  font-size: 14px;
+  color: #000;
+  height: 44px;
+  overflow: hidden;
+  margin: 0;
+}
+
+/* Pricing */
+.customer-price {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+}
+
+.customer-price .old {
+  text-decoration: line-through;
+  color: #999;
+  font-size: 14px;
+}
+
+.customer-price .new {
+  color: #ff4a00;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+/* Action Button */
+.customer-add-btn {
+  width: 100%;
+  max-width: 360px;
+  background: #FF580E;
+  color: #fff;
+  border: none;
+  padding: 10px 12px;
+  border-radius: 50px;
+  font-size: 16px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.customer-add-btn img {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+}
+
+/* ---------- Categories ---------- */
+.customer-categories-section {
+  margin: 30px 0;
+  padding: 0 12px;
+}
+
+.customer-categories-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 18px;
+}
+
+/* ---------- Responsive Breakpoints ---------- */
+
+/* Extra Small Devices (max-width: 575px) */
+@media (max-width: 575px) {
+  .customer-products-header {
+    margin-top: 18px;
+    padding: 20px 10px;
+  }
+
+  .customer-products-title {
+    font-size: 18px;
+  }
+
+  .customer-view-more {
+    font-size: 14px;
+  }
+
+  .customer-product-card {
+    min-height: 280px;
+    border-radius: 10px;
+  }
+
+  .customer-product-name {
+    font-size: 15px;
+  }
+
+  .customer-desc {
+    font-size: 13px;
+    height: 40px;
+  }
+
+  .customer-add-btn {
+    font-size: 15px;
+    padding: 8px 10px;
+  }
+}
+
+/* Small Devices (max-width: 767px) */
+@media (min-width: 576px) and (max-width: 767px) {
+  .customer-products-header {
+    padding: 0 12px;
+  }
+
+  .customer-product-card {
+    min-height: 300px;
+    border-radius: 12px;
+  }
+
+  .products-wrapper {
+    padding-top: 20%;
+  }
+}
+
+/* Tablet Devices (max-width: 768px) */
+@media (max-width: 768px) {
+  .customer-products-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 18px;
+  }
+
+  .customer-products-header {
+    padding: 10px 16px;
+  }
+
+  .customer-product-card {
+    min-height: 300px;
+    border-radius: 12px;
+  }
+
+  .customer-product-name {
+    font-size: 17px;
+  }
+
+  .customer-price .new {
+    font-size: 17px;
+  }
+
+  .customer-add-btn {
+    font-size: 15px;
+    padding: 9px 11px;
+  }
+
+  .customer-categories-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+}
+
+/* Desktop and above */
+@media (min-width: 1024px) {
+  .customer-products-grid {
+    grid-template-columns: repeat(3, minmax(220px, 1fr));
+    gap: 24px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .customer-product-card {
+    min-height: 380px;
+    border-radius: 16px;
+  }
+
+  .customer-product-name {
+    font-size: 20px;
+  }
+
+  .customer-price .new {
+    font-size: 20px;
+  }
+
+  .customer-add-btn {
+    font-size: 18px;
+    padding: 12px 14px;
+  }
+
+  .customer-categories-grid {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 28px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+}

@@ -1,0 +1,47 @@
+.about-wrapper {
+  padding: 80px 0;
+  background: #fafafa;
+  direction: rtl;
+}
+
+.about-title {
+  text-align: center;
+  font-size: 32px;
+  font-weight: bold;
+  color: #1d3a77;
+  margin-bottom: 40px;
+}
+
+.about-card {
+  background: white;
+  max-width: 800px;
+  margin: auto;
+  padding: 35px;
+  border-radius: 16px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+}
+
+.about-card h2 {
+    font-size: 22px;
+    color: #3e3c4c;
+    margin-top: 25px;
+    margin-bottom: 10px;
+
+}
+
+.about-card p {
+  font-size: 16px;
+  line-height: 1.8;
+  color: #444;
+}
+
+.about-card ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 15px;
+}
+
+.about-card li {
+  font-size: 16px;
+  margin-bottom: 8px;
+}

@@ -1,0 +1,70 @@
+.customer-categories-section {
+  margin-top: 60px;
+  direction: rtl;
+}
+
+.customer-categories-section .container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+.customer-categories-title {
+  font-size: 26px;
+  font-weight: bold;
+  margin-bottom: 25px;
+  text-align: right;
+}
+
+/* الـ grid تتحول إلى row */
+.customer-categories-grid {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.customer-category-box {
+  background: linear-gradient(135deg, #ff9b4a, #ffb86c);
+  padding: 20px;
+      width: 25%;
+    object-fit: cover;
+    height: 100%;
+
+  border-radius: 12px;
+  width: 140px;
+  height: 140px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  cursor: pointer;
+  transition: 0.3s ease;
+  margin-bottom: 30px;
+}
+
+.customer-category-box:hover {
+  transform: translateY(-5px);
+}
+.customer-category-box img {
+  width: 50px;
+
+      height: 50px;
+    object-fit: contain;
+    margin: 8px 33px 8px 47px;
+}
+
+.customer-category-icon {
+  font-size: 35px;
+  margin-bottom: 8px;
+}
+
+.customer-category-name {
+     font-size: 22px;
+    font-weight: bold;
+
+  }

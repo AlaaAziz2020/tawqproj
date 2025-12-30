@@ -1,0 +1,204 @@
+/* ===== Page ===== */
+.orders-page {
+  direction: rtl;
+  min-height: 100vh;
+  padding: 10px 0;
+}
+.delivered-wrapper{
+    display: flex;
+    margin-top: 10% !important;
+    margin-bottom: 10%;
+}
+/* ===== Layout ===== */
+.orders-layout {
+  display: flex;
+  gap: 30px;
+  align-items: flex-start;
+      margin-top: 13%;
+
+}
+
+/* ===== Tabs ===== */
+.tabs-column {
+  width: 220px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.tab {
+  padding: 18px;
+  border-radius: 14px;
+  border: 1px solid #e5e7eb;
+  background: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  text-align: center;
+  color: #111;
+  text-decoration: none;
+}
+
+.tab.active {
+  background: #1d3a77;
+  color: #fff;
+}
+
+/* ===== Orders Content ===== */
+.orders-content {
+  flex: 1;
+      direction: ltr;
+
+}
+
+/* ===== Order Row ===== */
+.order-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 22px 0;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+/* Left */
+.order-id {
+  background: #ff5a00;
+  color: #fff;
+  padding: 6px 14px;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+/* Middle */
+.price-center {
+  display: flex;
+  justify-content: center; /* ✅ توسيط أفقي */
+  width: 100%;
+}
+
+.mydeliverorder-price {
+  color: #ff8c00;
+  font-weight: 700;
+  font-size: 18px;
+  margin: 0;
+  text-align: center;
+}
+
+
+/* Right */
+.order-info {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.order-info h4 {
+    text-align: right;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.order-info p {
+  margin: 4px 0 0;
+  font-size: 14px;
+  color: #9e9e9e;
+}
+
+.order-info img {
+  width: 55px;
+  height: 55px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+/* ===== Sidebar Tabs ===== */
+.tabs-column {
+  position: fixed; /* Makes the tabs-sidebar fixed */
+  top: 0;
+  right: 0; /* Adjust for RTL layout (sidebar appears on the right) */
+  height: 100vh; /* Full viewport height */
+  width: 250px; /* Fixed width for the sidebar */
+  background-color: #f7f7f7; /* Set background for the sidebar */
+  display: flex;
+  flex-direction: column; /* Arranges the tabs vertically */
+  gap: 15px;
+  padding: 30px 20px; /* Additional padding for spacing on edges */
+  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1); /* Shadow for separation */
+  z-index: 1000; /* Ensures it stays above other elements */
+}
+
+/* Adjust active and default state of the tabs */
+.tab {
+  padding: 18px;
+  border-radius: 14px;
+  border: 1px solid #e5e7eb;
+  background: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  text-align: center;
+  color: #111;
+  text-decoration: none;
+}
+
+.tab.active {
+  background: #1d3a77; /* Active background color */
+  color: #fff;
+}
+
+/* Spacing for the main layout to account for the fixed sidebar */
+.delivered-wrapper {
+  margin-right: 270px; /* Pushes the page content to fit the sidebar */
+  display: flex;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+.orders-layout {
+  display: flex;
+  gap: 30px;
+  align-items: flex-start;
+  margin-top: 13%;
+}
+
+/* Responsive Design for the Sidebar */
+@media (max-width: 768px) {
+  .tabs-column {
+    position: static; /* Remove fixed positioning for small screens */
+    flex-direction: row; /* Changes to a top navigation bar on smaller devices */
+    width: 100%;
+    height: auto; /* Collapse height */
+    box-shadow: none; /* Hide shadow on smaller screens */
+  }
+
+  .tab {
+    flex: 1; /* Ensures all tabs take equal space as a row */
+  }
+
+  .delivered-wrapper {
+    margin-right: 0; /* Remove extra spacing when sidebar becomes top navigation */
+  }
+}
+/* ===== Responsive ===== */
+@media (max-width: 768px) {
+  .orders-layout {
+    flex-direction: column;
+  }
+
+  .tabs-column {
+    flex-direction: row;
+    width: 100%;
+  }
+
+  .tab {
+    flex: 1;
+  }
+
+  .order-row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .order-info {
+    width: 100%;
+    justify-content: space-between;
+  }
+}

@@ -1,0 +1,155 @@
+/* ===== صفحة الدعم المادي ===== */
+.maddi-page {
+  direction: rtl;
+  margin-top: 40px;
+  padding: 10px;
+  text-align: right;
+}
+
+/* العنوان */
+.maddi-title {
+  font-size: 22px;
+  font-weight: bold;
+  color: #1D3A77;
+  margin-bottom: 25px;
+  text-align: center;
+  padding-top: 2%;
+}
+
+/* الفورم */
+.maddi-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* مجموعات الإدخال */
+.maddi-input-group-full {
+  display: flex;
+  flex-direction: column;
+}
+
+.maddi-input-group {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+/* الليبل */
+.maddi-label {
+  font-weight: bold;
+  margin-bottom: 12px;
+  font-size: 20px;
+}
+
+/* صفين */
+.maddi-input-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+}
+
+/* حقول الإدخال */
+.maddi-input {
+  width: 100%;
+  padding: 14px;
+  border-radius: 10px;
+  border: 1px solid #e0e0e0;
+  background: #fafafa;
+  font-size: 16px;
+  outline: none;
+  height: 57px;
+}
+
+/* تأثير placeholder */
+.maddi-input::placeholder,
+.maddi-phone-input::placeholder,
+.maddi-support-select option[disabled] {
+  color: #999;
+  font-size: 15px;
+}
+
+/* رقم الهاتف */
+.maddi-phone-row {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  direction: ltr;
+}
+
+.maddi-phone-input {
+  flex: 1;
+}
+
+/* صندوق كود الدولة */
+.maddi-phone-code-box {
+  background: #f3f3f3;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 0 10px;
+  height: 55px;
+  display: flex;
+  align-items: center;
+  min-width: 90px;
+}
+
+/* select */
+.maddi-phone-select,
+.maddi-support-select {
+ width: 100%;
+    background: #FAFAFA;
+    border: 1px solid #e9e9e9;
+    outline: none;
+    font-size: 20px;
+    /* color: #444; */
+    cursor: pointer;
+}
+
+/* زر الإرسال */
+.maddi-send-btn {
+  background: #1D3A77;
+  color: white;
+  padding: 16px;
+  border-radius: 12px;
+  border: none;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 10px;
+  width: 100%;
+}
+
+.maddi-send-btn:hover {
+  background: #183264;
+}
+
+/* Fade ثابت */
+.maddi-fade-in {
+  animation: maddiFadeIn 0.6s ease-in-out;
+  animation-fill-mode: forwards !important;
+}
+
+@keyframes maddiFadeIn {
+  from { opacity: 0; transform: translateY(12px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  .maddi-input-row {
+    flex-direction: column;
+  }
+
+  .maddi-title {
+    font-size: 20px;
+  }
+
+  .maddi-input,
+  .maddi-phone-select {
+    font-size: 14px;
+  }
+
+  .maddi-send-btn {
+    font-size: 16px;
+  }
+}

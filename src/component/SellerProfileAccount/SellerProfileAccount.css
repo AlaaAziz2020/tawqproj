@@ -1,0 +1,247 @@
+.profile-wrapper {
+  display: flex;
+  flex-direction: row;
+  direction: rtl;
+  margin-top: 6%;
+  margin-bottom: 10%;
+  gap: 40px;
+}
+
+.marketing-sidebar {
+    width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.side-btn {
+  background: #fff;
+  border: 1px solid #ddd;
+  padding: 18px 16px;
+  border-radius: 10px;
+  font-size: 18px;
+  text-align: right;
+  font-weight: 500;
+  cursor: pointer;
+  width: 98%;
+}
+
+.side-btn.active { background: #123a8a; color: #fff; }
+.side-btn.logout { background: #d22121; color: #fff; }
+
+.profile-content {
+  flex: 1;
+  margin-right: 60px;
+}
+
+.profile-avatar-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.avatar-circle {
+  position: relative;
+  width: 170px;
+  height: 170px;
+}
+
+.profile-avatar {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.avatar-edit-btn {
+  position: absolute;
+  bottom: 8px;
+  left: 50%;
+  transform: translateX(40%);
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  border: none;
+  background: #ff580e;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.profile-form {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: right;
+}
+
+.form-group { margin-bottom: 18px; }
+.form-input {
+  width: 100%;
+  padding: 14px 55px;
+  border-radius: 10px;
+  border: 1px solid #e3e3e3;
+  background: #f8f8f8;
+}
+
+.phone-box {
+  display: flex;
+  flex-direction: row; 
+  align-items: center;
+  gap: 12px;                 
+  width: 100%;
+}
+
+.code-box {
+  min-width: 95px;
+  height: 48px;
+
+  background: #f8f8f8;
+  border: 1px solid #e5e5e5;
+  border-radius: 12px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+
+  cursor: pointer;
+  position: relative;
+  font-size: 16px;
+}
+
+
+
+.codes-list {
+  position: absolute;
+  top: 52px;
+  right: 0;
+  width: 120px;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  max-height: 220px;
+  overflow-y: auto;
+  z-index: 999;
+}
+
+.codes-list li {
+  padding: 10px;
+  font-size: 15px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.codes-list li:hover {
+  background: #f2f2f2;
+}
+
+
+.phone-input {
+  flex: 1;
+  height: 48px;
+
+  background: #f8f8f8;
+  border: 1px solid #e5e5e5;
+  border-radius: 12px;
+
+  padding: 0 16px;
+  font-size: 18px;
+
+  direction: ltr;    
+  text-align: left;    
+}
+
+
+.codes-list li:hover { background: #eee; }
+
+.social-row { display: flex; align-items: center; gap: 10px; }
+.social-input-box { flex: 1; position: relative; }
+.input-icon { position: absolute; top: 50%; right: 15px; width: 22px; transform: translateY(-50%); }
+
+.save-wrapper {  margin-top: 25px; }
+.save-btn { background: #FF580E; color: #fff; border: none; border-radius: 12px; font-size: 20px; padding: 5px 2px; cursor: pointer; width: 100%; max-width: 150px; }
+.phone-field {
+  display: flex;
+  width: 100%;
+  height: 50px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+  background: #fff;
+}
+
+/* select */
+.country-code {
+  width: 90px;
+  border: none;
+  outline: none;
+  background: #fff;
+  padding: 0 10px;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.phone-row {
+  display: flex;
+  gap: 12px;
+  width: 100%;
+}
+
+/* كود الدولة */
+.country-code-input {
+  width: 100px;
+  height: 50px;
+  border-radius: 10px;
+  border: 1px solid #e3e3e3;
+  background: #f8f8f8;
+  font-size: 16px;
+  padding: 0 10px;
+  cursor: pointer;
+}
+
+/* رقم الهاتف */
+.phone-number-input {
+  flex: 1;
+  height: 50px;
+  border-radius: 10px;
+  border: 1px solid #e3e3e3;
+  background: #f8f8f8;
+  padding: 0 16px;
+  font-size: 16px;
+  direction: ltr;
+  text-align: left;
+}
+
+/* focus clean */
+.country-code-input:focus,
+.phone-number-input:focus {
+  outline: none;
+  box-shadow: none;
+  border-color: #123a8a;
+}
+
+
+/* ===== Responsive ===== */
+@media (max-width: 1024px) {
+  .profile-wrapper { flex-direction: column; align-items: center; margin: 40px 20px; }
+  .profile-content { margin-right: 0; width: 100%; }
+  .marketing-sidebar { width: 100%; flex-direction: row; flex-wrap: wrap; justify-content: center; gap: 10px; margin-bottom: 30px; }
+  .side-btn { flex: 1 1 45%; font-size: 18px; padding: 14px }
+}
+
+@media (max-width: 768px) {
+  .profile-wrapper { gap: 20px; margin-top: 20px; margin-bottom: 40px; }
+  .avatar-circle { width: 140px; height: 140px; }
+  .form-input { padding: 12px 40px; font-size: 16px; }
+  .side-btn { flex: 1 1 100%; font-size: 16px; padding: 12px; }
+  .save-wrapper {
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .avatar-circle { width: 120px; height: 120px; }
+  .form-input { padding: 10px 35px; font-size: 14px; }
+  .side-btn { font-size: 14px; padding: 10px; }
+}

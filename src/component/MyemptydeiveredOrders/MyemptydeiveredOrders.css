@@ -1,0 +1,88 @@
+.orders-pagenew {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 12%;
+  margin-bottom:15% ;
+  direction: rtl;
+}
+
+/* ===== Tabs Right Side ===== */
+.orders-tabsnew {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 250px;
+}
+
+.tab {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid #eee;
+  font-size: 20px;
+  font-weight: 600;
+  text-align: center;
+  cursor: pointer;
+}
+
+.tab.active {
+  background: #123a8a;
+  color: white;
+}
+
+/* ===== Left Content ===== */
+.orders-contentnew {
+  flex: 1;
+  text-align: center;
+}
+
+.empty-img {
+  width: 300px;
+  margin-top: 30px;
+}
+
+.empty-text {
+  font-size: 22px;
+  font-weight: 600;
+  margin-top: 20px;
+}
+
+/* الشاشات الصغيرة — اجبار اليمين + الشمال يكونوا عمود */
+@media (max-width: 768px) {
+
+  .orders-pagenew {
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .orders-tabsnew {
+    width: 100% !important;
+    max-width: 100% !important;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .orders-tabsnew .tab {
+    flex: 1 1 calc(50% - 10px); /* كل تاب يأخذ نص عرض الشاشة */
+    font-size: 18px;
+    padding: 15px;
+  }
+
+  .orders-contentnew {
+    width: 100%;
+    text-align: center;
+  }
+
+  .empty-img {
+    width: 200px;
+  }
+
+  .empty-text {
+    font-size: 18px;
+  }
+}

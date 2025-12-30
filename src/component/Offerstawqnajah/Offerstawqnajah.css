@@ -1,0 +1,281 @@
+ .offersproducts-wrapper{
+  padding-bottom: 30px;
+    padding-top: 14%;
+
+ }
+ .offerscustomer-products-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  direction: rtl;
+  margin-top: 0px;
+}
+
+.offerscustomer-products-title {
+    font-size: 24px;
+    font-weight: bold;
+    padding-top: 0px;
+}
+
+.offerscustomer-view-more {
+ color: #1D3A77;
+    font-size: 24px;
+    font-weight: 400;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.offerscustomer-products-grid {
+     margin-top: 25px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+    direction: rtl;
+    margin-bottom: 42px;
+}
+
+.offerscustomer-product-card {
+    background: #fff;
+    border-radius: 16px;
+    /* padding: 4px 0px 11px 0px; */
+    /* padding: 0; */
+     padding-bottom: 13px; 
+    box-shadow: 0 3px 10px #00000015;
+    transition: 0.3s 
+ease-in-out;
+    position: relative;
+    border:1px solid #E9E9E9;
+
+}
+
+.offerscustomer-product-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Discount */
+.offerscustomer-discount {
+    position: absolute;
+    top: 0px;
+    left: 0%;
+    background: #FFD900;
+    color: #fff;
+    padding: 1px 37px;
+    font-size: 20px;
+     border-top-left-radius: 12px; 
+    border-bottom-right-radius: 12px; 
+
+    font-weight: bold;
+}
+
+/* Image */
+.offerscustomer-product-img {
+    width: 100%;
+    height: 247px;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    object-fit: cover;
+    padding-bottom: 11px;
+        padding-right: 0;
+
+
+
+}
+
+/* Name */
+.offerscustomer-product-name {
+  font-size: 20px;
+  font-weight: bold;
+  /* margin-top: 10px; */
+}
+
+/* Rating */
+.offerscustomer-rate {
+    margin-top: 5px;
+    color: #000;
+    font-size: 16px;
+    font-weight: bold;
+}
+/* Description */
+.offerscustomer-desc {
+     font-size: 16px;
+    color: #000;
+    height: 45px;
+    overflow: hidden;
+    font-weight: 400;
+    padding-right: 9px;
+}
+
+/* Price */
+.offerscustomer-price {
+   margin-top: 10px;
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+    padding-right: 9px;
+}
+
+.offerscustomer-price .old {
+  text-decoration: line-through;
+  color: #999;
+}
+
+.offerscustomer-price .new {
+  color: #ff4a00;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* Button */
+.offerscustomer-add-btn {
+width: 94%;
+    background: #FF580E;
+    color: #fff;
+    border: none;
+    padding: 7px 1px 9px 1px;
+    border-radius: 50px;
+    font-size: 18px;
+    margin-top: 15px;
+    cursor: pointer;
+    margin-bottom: 12px;
+    margin-right: 9px;
+    
+}
+.offerscustomer-add-btn img{
+width: 7%;
+    height: 100%;
+    object-fit: contain;
+    margin-right: 13px;
+}
+
+.offerscustomer-add-btn:hover {
+  background: #e55f00;
+}
+.carts{
+    font-size: 20px;
+    font-weight: 500;
+}
+.customer-heart {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 28px;
+  height: 28px;
+  z-index: 5;
+  cursor: pointer;
+}
+.heart-icon{
+        bottom: 91%;
+    right: 16px;
+    color: #FF580E;
+    /* background: #00000033; */
+    padding: 8px 8px 5px 27px;
+    border-radius: 26px;
+    font-size: 20px;
+  
+}
+.customer-heart {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: rgba(0,0,0,0.25);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+}
+
+.heart-icon {
+  color: #FF580E;
+  font-size: 18px;
+}
+
+.offerscustomer-categories-section {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+/* العنوان */
+.offerscustomer-categories-title {
+  font-size: 28px;
+  font-weight: bold;
+  text-align: right;
+  margin-bottom: 35px;
+  direction: rtl;
+}
+
+/* الشبكة */
+.offerscustomer-categories-grid {
+  display: grid;
+    grid-template-columns: repeat(7, 1fr);
+  gap: 35px;               
+  justify-content: center;
+  align-items: center;
+  direction: rtl;
+}
+
+/* البوكس */
+.offerscustomer-category-box {
+  background: linear-gradient(45deg, #ff9f4d, #ffb977);
+  border-radius: 16px;
+  padding: 35px 10px;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+/* Hover */
+.offerscustomer-category-box:hover {
+  transform: translateY(-5px);
+}
+
+/* الأيقونة */
+.offerscustomer-category-icon {
+  width: 45px;
+  height: 45px;
+  object-fit: contain;
+  margin-bottom: 12px;
+}
+
+/* نص الفئة */
+.customer-category-name {
+  color: #fff;
+  font-size: 22px;
+  font-weight: bold;
+  margin-top: 5px;
+}
+
+/* تصغير أيقونة الإلكترونيات فقط */
+.offerscustomer-category-box:first-child img {
+  width: 35px;
+  height: 35px;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .offerscustomer-categories-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+  }
+}
+
+@media (max-width: 576px) {
+  .customer-categories-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .customer-products-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 576px) {
+  .customer-products-grid {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,197 @@
+/* ==================== الصفحة ==================== */
+.reports-page {
+  margin-top: 130px;
+  margin-bottom: 50px;
+  direction: rtl;
+}
+
+/* ==================== العنوان ==================== */
+.page-titles {
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 40px;
+  color: #000;
+}
+
+.page-titles .accounts {
+  color: #000;
+  font-weight: 400;
+}
+
+.page-titles .main-gray {
+  color: #9E9E9E;
+  font-size: 24px;
+  font-weight: 400;
+}
+
+/* ==================== الجدول ==================== */
+.finance-table {
+  width: 100%;
+  border-collapse: separate !important;
+  border-spacing: 0 0 !important;
+  margin-bottom: 40px;
+}
+.tableheading {
+  border-bottom: 1px solid #9E9E9E;
+}
+
+/* رأس الجدول */
+.finance-table th {
+  background: #fff;
+  font-size: 20px;
+  font-weight: 500;
+  padding: 18px;
+  color: #9E9E9E;
+  text-align: center;
+  border-bottom: 1px solid #E0E0E0;
+}
+
+/* خلايا الجدول */
+.finance-table td {
+  padding: 20px 18px;
+  font-size: 20px;
+  text-align: center;
+  font-weight: 400;
+  color: #000;
+  border: none;
+  height: 68px;
+}
+
+/* ==================== ألوان الصفوف ==================== */
+.finance-table tbody tr:nth-child(odd) td {
+  background: #F8F8F8;
+}
+
+.finance-table tbody tr:nth-child(even) td {
+  background: #FFFFFF;
+}
+
+/* ==================== زوايا الصف ==================== */
+.finance-table tbody tr td:first-child {
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+.finance-table tbody tr td:last-child {
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+
+/* ==================== توزيع الأعمدة ==================== */
+.finance-table tbody tr,
+.finance-table thead tr {
+  display: grid !important;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  align-items: center;
+  width: 100%;
+}
+
+/* توسيط المحتوى */
+.finance-table td,
+.finance-table th {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* الحالة */
+.finance-table .status {
+  color: #000;
+  font-weight: 400;
+}
+
+/* ==================== سكروول أفقي ==================== */
+
+.table-wrapper {
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.table-wrapper::-webkit-scrollbar {
+  height: 6px;
+}
+
+.table-wrapper::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 10px;
+}
+
+.table-wrapper::-webkit-scrollbar-track {
+  background: #f0f0f0;
+}
+
+/* منع تكسير الأعمدة داخل السكرول */
+.finance-table {
+  min-width: 900px !important;
+}
+
+/* ==================== Responsive ==================== */
+
+/* 768px */
+@media (max-width: 768px) {
+  .finance-table th,
+  .finance-table td {
+    font-size: 17px;
+    padding: 14px;
+  }
+}
+
+/* 576px – موبايل */
+@media (max-width: 576px) {
+
+  /* رجّعي الجدول من GRID إلى TABLE */
+  .finance-table tbody tr,
+  .finance-table thead tr {
+    display: table-row !important;
+  }
+
+  .finance-table td,
+  .finance-table th {
+    display: table-cell !important;
+  }
+
+  /* خلي الجدول أقل عرض عشان يظهر كويس */
+  .finance-table {
+    min-width: 700px !important;
+  }
+
+  .page-titles {
+    font-size: 20px;
+    line-height: 1.6;
+  }
+
+  .print-btn {
+    font-size: 16px;
+    padding: 10px;
+  }
+}
+
+/* 400px */
+@media (max-width: 400px) {
+  .finance-table {
+    min-width: 600px !important;
+  }
+
+  .finance-table td,
+  .finance-table th {
+    font-size: 13px;
+    padding: 8px;
+  }
+
+  .print-btn {
+    font-size: 14px;
+  }
+}
+
+/* زر الطباعة */
+.print-btn {
+  width: 100%;
+  background: #1d3a77;
+  padding: 12px 30px;
+  font-size: 20px;
+  border-radius: 10px;
+  margin-top: 10px;
+  font-weight: bold;
+  color: #fff;
+}

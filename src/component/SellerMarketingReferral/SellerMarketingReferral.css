@@ -1,0 +1,101 @@
+.marketing-wrapper {
+  display: flex;
+  direction: rtl;
+  margin-top: 6%;
+  margin-bottom: 10%;
+}
+
+/* Sidebar */
+.marketing-sidebar {
+  width: 260px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.side-btn {
+  background: #ffffff;
+  border: 1px solid #dddddd;
+  padding: 18px 16px;
+  border-radius: 10px;
+  font-size: 20px;
+  text-align: right;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.side-btn.active {
+  background: #123a8a;
+  color: #fff;
+  border-color: #123a8a;
+}
+
+.side-btn.logout {
+  background: #d22121;
+  color: #fff;
+  border-color: #d22121;
+}
+
+/* Content */
+.marketing-content {
+  flex: 1;
+  margin-right: 60px;
+  text-align: center;
+}
+
+.marketing-illustration img {
+  width: 260px;
+  margin-bottom: 20px;
+}
+
+.marketing-title {
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.marketing-subtitle {
+  color: #8b8b8b;
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+/* Info Boxes */
+.info-box {
+  background: #fff;
+  padding: 16px 20px;
+  border-radius: 10px;
+  border: 1px solid #e5e5e5;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 18px;
+  font-size: 18px;
+    direction: ltr;
+}
+
+.info-icon img {
+  width: 22px;
+}
+
+.info-text {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.info-value {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* Withdraw Button */
+.withdraw-btn {
+width: 100%;
+    background: #123a8a;
+    color: #fff;
+    border: none;
+    padding: 14px 0;
+    border-radius: 12px;
+    font-size: 20px;
+    margin-top: 11px;
+}

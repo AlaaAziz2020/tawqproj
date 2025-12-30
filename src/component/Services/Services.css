@@ -1,0 +1,118 @@
+/* Reduce services section width and decrease text sizes
+   Breakpoints:
+   - Mobile: up to 767px
+   - Tablet / Laptop: 768px — 1023px
+   - Desktop / Larger: 1024px and up
+*/
+
+/* Base: narrower services container and centered layout */
+.services-section {
+  width: 92%;
+  max-width: 900px;     /* reduced overall width on large screens */
+  margin: 0 auto;
+  padding: 12px 8px;
+  box-sizing: border-box;
+}
+
+/* If you use a wrapper/grid inside .services-section, target it too */
+.services-section .services-grid,
+.services-section .services-wrapper {
+  display: grid; /* fallbacks okay if not grid in markup */
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 14px;
+  justify-items: center;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Example service card sizing and spacing */
+.services-section .service-card {
+width: 100%;
+    max-width: 420px;
+    padding: 27px;
+    border-radius: 12px;
+    background: #fff;
+    box-shadow: 0 4px 12px rgba(10, 42, 87, 0.06);
+    box-sizing: border-box;
+}
+
+/* Text sizes (desktop defaults — slightly reduced) */
+.services-section .service-title {
+  font-size: 18px;
+  font-weight: 600;
+  margin: 6px 0;
+}
+
+.services-section .service-desc {
+  font-size: 14px;
+  color: #666;
+  line-height: 1.45;
+}
+
+/* Smaller supporting text (badges/labels) */
+.services-section .service-meta,
+.services-section .service-small {
+  font-size: 12px;
+  color: #888;
+}
+
+/* ===== Responsive reductions ===== */
+
+/* Tablet / Laptop: 768px — 1023px */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .services-section {
+    max-width: 720px;    /* reduce container width on tablet */
+    padding: 10px;
+  }
+
+  .services-section .services-grid {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 12px;
+  }
+
+  .services-section .service-card { max-width: 360px; padding: 10px; }
+
+  .services-section .service-title { font-size: 16px; }
+  .services-section .service-desc  { font-size: 13px; }
+  .services-section .service-meta  { font-size: 11px; }
+}
+
+/* Mobile: up to 767px */
+@media (max-width: 767px) {
+  .services-section {
+    width: 94%;
+    max-width: 420px;    /* narrow container for small screens */
+    padding: 8px;
+    font-size: 26px;
+  }
+
+  .services-section .services-grid {
+    grid-template-columns: 1fr; /* single column for mobile */
+    gap: 10px;
+  }
+
+  .services-section .service-card {
+    max-width: 100%;
+    padding: 10px;
+  }
+
+  /* Smaller fonts for mobile */
+  .services-section .service-title { font-size: 15px; }
+  .services-section .service-desc  { font-size: 12px; }
+  .services-section .service-meta  { font-size: 11px; }
+
+  /* If there are icons or image sizes */
+  .services-section .service-icon,
+  .services-section img.service-img {
+    width: 44px;
+    height: 44px;
+  }
+}
+
+/* Optional: extra-large screens - keep things centered but not too wide */
+@media (min-width: 1440px) {
+  .services-section { max-width: 1100px; }
+  .services-section .service-card { max-width: 480px; }
+  .services-section .service-title { font-size: 20px; }
+  .services-section .service-desc  { font-size: 15px; }
+}

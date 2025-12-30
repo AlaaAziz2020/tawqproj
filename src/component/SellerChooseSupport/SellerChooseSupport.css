@@ -1,0 +1,131 @@
+/* الصفحة */
+.choose-support {
+  text-align: center;
+  direction: rtl;
+  margin-top: 40px;
+  padding: 20px;
+  overflow: visible !important;   
+      margin-bottom: 4%;
+
+}
+
+/* عنوان الصفحة */
+.support-title {
+ font-size: 27px;
+    font-weight: 500;
+    color: #000;
+}
+
+/* اللوجو */
+.support-logo-box {
+  margin-top: 40px;
+  margin-bottom: 30px;
+}
+
+.support-logo {
+  width: 9%;
+  height: auto;
+}
+
+/* النص */
+.support-text {
+font-size: 20px;
+    color: #333;
+    margin-bottom: 35px;
+    font-weight: 500;
+
+}
+
+/* الأزرار */
+.support-btns {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.support-btn {
+    width: 72%;
+    background: #1D3A77;
+    color: #fff;
+    border: none;
+    padding: 15px 0;
+    font-size: 18px;
+    border-radius: 12px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.2s;
+    margin: auto;
+}
+
+.support-btn:hover {
+  background: #173067;
+}
+.phone-box {
+  display: flex;
+  flex-direction: row-reverse; /* مهم جداً عشان RTL */
+  align-items: center;
+  background: #e9e9e9;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid #ddd;
+  height: 55px;
+}
+
+/* حقل الرقم */
+.phone-input {
+  flex: 1;
+  border: none;
+  background: transparent;
+  padding: 15px;
+  font-size: 16px;
+  text-align: right;
+  outline: none;
+}
+
+/* كود البلد */
+.phone-code {
+  background: white;
+  padding: 0 18px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 15px;
+  border-left: 1px solid #ccc;
+  cursor: pointer;
+  color: #555;
+}
+
+.phone-code i {
+  font-size: 10px;
+}
+
+/* ===== Fade Animation ثابت ===== */
+.fade-in {
+  animation: fadeIn 0.6s ease forwards;
+  animation-fill-mode: both !important;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+/* موبايل */
+@media (max-width: 480px) {
+  .support-title {
+    font-size: 20px;
+  }
+
+  .support-btn {
+    font-size: 16px;
+    padding: 13px;
+  }
+}

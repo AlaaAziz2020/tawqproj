@@ -1,0 +1,33 @@
+
+.shopping-image{
+    background-color: #1D3A77;
+                   width:47%;
+                   height:100%;
+                   border-Radius:12px;
+                   display:flex;
+                   cursor:pointer;
+                   flex-Direction:column;
+                   justify-Content:center;
+                   align-Items:center;
+                   
+}
+.shopping-image img{
+        width: 39px;
+
+}
+.texting-buyer{
+    font-size: 20px;
+}
+.sellericon{
+margin-left:2%
+
+}
+
+
+
+@media (max-width: 768px) {
+
+  .account {
+    display: none;      
+  }
+}

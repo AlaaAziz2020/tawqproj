@@ -1,0 +1,29 @@
+.my-order-details {
+  padding-top: 160px !important; /* علشان الـ navbar والـ uppernav الثابتين */
+}
+
+.my-order-details .order-details-title {
+  color: #9E9E9E;
+  font-size: 30px;
+  font-weight: 400;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.my-order-details .order-details-box {
+  background: #fff;
+  padding: 25px;
+  border-radius: 16px;
+  box-shadow: 0 3px 12px rgba(0,0,0,0.1);
+}
+
+.my-order-details .order-details-heading {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.my-order-details .order-details-desc {
+  color: #777;
+  font-size: 16px;
+}

@@ -1,0 +1,369 @@
+/* ================= MAIN NAVBAR ================== */
+
+.tn-nav-main {
+    background: #1d3a77;
+    padding: 14px 20px;
+    width: 100%;
+    position: fixed;
+    top: 79px;
+    left: 0;
+    z-index: 9999;
+    height: 69px;
+    display: flex;
+    align-items: center;
+}
+
+.tn-nav-main .container {
+  direction: ltr;
+}
+
+.tn-nav-wrapper {
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Desktop buttons container */
+.tn-buttons-box {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Buttons */
+.tn-nav-app-btn {
+  background: linear-gradient(90deg, #000000, #91b4ff);
+  color: #fff;
+  border-radius: 33px;
+  padding: 8px 25px;
+  border: none;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.tn-nav-logout-small {
+  background: #ed3a3a;
+  color: #fff;
+  border: none;
+  padding: 8px 25px;
+  border-radius: 30px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* LINKS */
+.tn-nav-linkss {
+  display: flex;
+  gap: 40px;
+  direction: rtl;
+}
+
+.tn-nav-links a {
+  color: #fff !important;
+  font-size: 15px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+/* Hamburger */
+.tn-nav-hamburger {
+  display: none;
+  font-size: 28px;
+  color: #fff;
+  background: none;
+  border: none;
+}
+
+.tn-nav-link {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 600;
+  text-decoration: none;
+  padding-bottom: 5px;
+  position: relative;
+}
+
+/* Active link line */
+.tn-nav-link.active::after {
+    content: "";
+    position: absolute;
+    bottom: -6px;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: #fff;
+    border-radius: 2px;
+}
+
+/* Hover Line */
+.tn-nav-link:hover::after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: rgba(255, 221, 87, 0.6);
+  border-radius: 2px;
+}
+
+/* ================= OVERLAY ================= */
+
+.tn-nav-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.3s;
+}
+
+.tn-nav-overlay.show {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/* ================= SIDEBAR ================= */
+
+.tn-nav-sidebar {
+  position: fixed;
+  top: 0;
+  left: -320px;
+  width: 300px;
+  height: 100vh;
+  background: #fff;
+  z-index: 10001;
+  padding: 20px;
+  transition: 0.4s;
+  direction: rtl;
+}
+
+.tn-nav-sidebar.open {
+  left: 0;
+}
+
+.tn-nav-close-sidebar {
+  background: none;
+  border: none;
+  font-size: 26px;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+.tn-nav-sidebar-header h3 {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.tn-nav-sidebar-header .date {
+  font-size: 14px;
+  color: #777;
+}
+
+.tn-nav-sidebar-links {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+.tn-nav-sidebar-links li {
+  padding: 15px 0;
+  border-bottom: 1px solid #ddd;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.tn-nav-sidebar-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 18px;
+}
+
+.tn-nav-sidebar-links svg {
+  color: #1d3a77;
+}
+
+.tn-nav-logout-btn {
+  width: 100%;
+  background: #ed3a3a;
+  color: #fff;
+  padding: 12px;
+  border: none;
+  border-radius: 10px;
+  margin-top: 25px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 767px) {
+  /* .tn-nav-main {
+    height: auto;
+    padding: 12px 10px;
+    top: 70px;
+  } */
+
+  .tn-nav-wrapper {
+    flex-direction: row;
+    gap: 10px;
+  }
+
+  .tn-buttons-box {
+    width: 100%;
+    gap: 8px;
+  }
+
+  .tn-nav-app-btn,
+  .tn-nav-logout-small {
+        font-size: 11px;
+        padding: 7px 2px;
+        width: 100%;
+  }
+
+  .tn-nav-hamburger {
+    display: block;
+    font-size: 26px;
+  }
+
+  .tn-nav-linkss {
+    display: none;
+    position: absolute;
+    top: 82px;
+    left: 0;
+    right: 0;
+    background: #10397a;
+    flex-direction: column;
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+    z-index: 10000;
+  }
+
+  .tn-nav-linkss.open {
+    display: flex;
+  }
+
+  .tn-nav-linkss a {
+    padding: 12px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    text-align: center;
+    font-size: 15px;
+  }
+
+  .tn-nav-sidebar {
+    width: 260px;
+  }
+  /* .tn-nav-main {
+    top: 29% !important;
+    height: 10%;
+    width: 100%;
+  } */
+  .tn-nav-hamburger {
+    display: block !important;
+    z-index: 999999;
+  }
+  .banner-text {
+    padding-bottom: 26px;
+
+    bottom: 1%;
+    right: 50%;
+  }
+}
+/* @media (min-width: 400px) and (max-width: 767px){
+      .customerbtn {
+        padding: 16px 10px;
+    }
+
+} */
+/* ================= TABLET ================= */
+
+/* ================= TABLET (481px → 768px) ================= */
+
+@media (min-width: 481px) and (max-width: 768px) {
+  /* .tn-nav-main {
+    height: 70px;
+  } */
+
+  /* ✅ نخفي اللينكات */
+  /* .tn-nav-links {
+    display: none !important;
+  } */
+
+  /* ✅ نظهر زر الهامبرجر */
+  /* .tn-nav-hamburger {
+    display: block !important;
+    font-size: 28px;
+  } */
+
+  /* ✅ نخلي الأزرار مظبوطة */
+  .tn-buttons-box {
+    gap: 8px;
+  }
+
+  .tn-nav-app-btn,
+  .tn-nav-logout-small {
+        font-size: 13px;
+        padding: 4px 16px;
+  }
+
+  /* ✅ لما المنيو تتفتح */
+  .tn-nav-linkss.open {
+    display: flex !important;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    right: 0;
+    background: #10397a;
+    flex-direction: column;
+    z-index: 99999;
+  }
+
+  .tn-nav-linkss a {
+    padding: 12px;
+    text-align: center;
+    font-size: 16px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  }
+}
+
+/* ================= TABLET LANDSCAPE (769px → 843px) ================= */
+
+@media (min-width: 769px) and (max-width: 843px) {
+  /* ✅ هنا نرجّع اللينكات طبيعي */
+  /* .tn-nav-links {
+    display: flex !important;
+    gap: 15px;
+  } */
+
+  /* .tn-nav-links a {
+    font-size: 15px;
+  } */
+
+  /* ✅ ونخفي الهامبرجر */
+  /* .tn-nav-hamburger {
+    display: none !important;
+  } */
+}
+
+/* ================= TABLET LANDSCAPE ================= */
+
+/* @media (min-width: 769px) and (max-width: 843px) {
+  .tn-nav-links {
+    gap: 15px;
+  }
+
+  .tn-nav-links a {
+    font-size: 15px;
+  }
+
+  .tn-nav-hamburger {
+    display: none;
+  }
+} */

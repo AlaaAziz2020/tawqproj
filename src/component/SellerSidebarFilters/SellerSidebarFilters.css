@@ -1,0 +1,22 @@
+.filter-box {
+  background: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 3px 12px rgba(0,0,0,0.1);
+  min-height: 430px;
+}
+
+.filter-title {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.filter-group label {
+  font-weight: 600;
+}
+
+.price-range {
+  font-size: 14px;
+  color: #777;
+}

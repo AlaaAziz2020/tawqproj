@@ -1,0 +1,110 @@
+.payment-page {
+  direction: rtl;
+}
+
+.payment-title {
+  font-size: 28px;
+  font-weight: bold;
+  text-align: right;
+  margin-bottom: 40px;
+}
+
+.payment-title span {
+  color: #9e9e9e;
+}
+
+.payment-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 40px;
+  direction: ltr;
+}
+
+/* ===================== Order Summary ===================== */
+
+.order-summary {
+  background: #fff;
+  padding: 11px 30px;
+  border-radius: 12px;
+  width: 300px;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.1);
+  direction: rtl;  
+}
+
+.summary-title {
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.summary-row {
+  display: flex;
+  justify-content: space-between;
+  color: #444;
+  padding: 10px 0;
+  font-size: 18px;
+}
+
+.summary-row.total span:first-child {
+  color: #ff580e;
+  font-weight: bold;
+}
+
+.total-num {
+  color: #000;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+/* ===================== Payment Methods ===================== */
+
+.payment-methods {
+  flex: 1;
+  background: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.1);
+  direction: rtl;
+}
+
+.method-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 14px 0;
+  font-size: 20px;
+}
+
+.method-row input {
+  width: 22px;
+  height: 22px;
+}
+
+.pay-btn {
+  width: 100%;
+  padding: 15px 0;
+  background: #1d3a77;
+  color: #fff;
+  font-size: 20px;
+  border: none;
+  border-radius: 10px;
+  margin-top: 25px;
+  cursor: pointer;
+}
+
+.pay-btn:hover {
+  background: #153063;
+}
+
+/* ===================== Responsive ===================== */
+
+@media (max-width: 768px) {
+  .payment-wrapper {
+    flex-direction: column;
+  }
+
+  .order-summary {
+    width: 100%;
+  }
+}

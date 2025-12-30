@@ -1,0 +1,183 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "tajawal", sans-serif;
+}
+.login-image {
+  height: 100vh;
+}
+.login-wrapper {
+  overflow: hidden;
+}
+.login-wrapper .login-form {
+  width: 50%;
+  max-width: 100%;
+  padding-left: 5%;
+  padding-right: 2%;
+  margin-top: 5%;
+  box-sizing: border-box;
+}
+.forgot-password {
+  text-align: right;
+  margin-top: 0.5rem;
+}
+
+.forgot-password .link {
+  color: rgb(29, 58, 119);
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.input-label {
+  font-size: 20px;
+  font-weight: bold;
+  color: #000;
+  text-align: right;
+  padding-bottom: 2%;
+}
+
+.input-field,
+.phone-box select {
+  text-align: right;
+  background-color: #fafafa;
+  height: 60px;
+  border: 1px solid #e9e9e9;
+  border-radius: 12px;
+  padding-right: 5%;
+  font-size: 18px;
+}
+
+.input-error {
+  color: red;
+}
+
+.phone-box {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  height: 5%;
+  padding-right: 0%;
+}
+
+.phone-box input {
+  background-color: #e5e5e5;
+  height: 99%;
+  border: 1px solid #e5e5e5;
+  border-radius: 8px;
+  padding-right: 50%;
+  font-size: 18px;
+}
+
+.code-box {
+  width: 100%;
+  height: 100%;
+  background: #e5e5e5;
+  border-radius: 8px;
+  border: 1px solid #e5e5e5;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 8px;
+  cursor: pointer;
+  position: relative;
+}
+
+.code-box .arrow {
+  font-size: 16px;
+  position: absolute;
+  left: 18%;
+  top: 27%;
+}
+
+.code-box > span:first-child {
+  position: absolute;
+  left: 48%;
+}
+
+.codes-list {
+  position: absolute;
+  top: 50px;
+  right: 0;
+  width: 100px;
+  max-height: 200px;
+  overflow-y: auto;
+  background: white;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  z-index: 200;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.codes-list li {
+  padding: 6px 8px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.codes-list li:hover {
+  background: #eee;
+}
+
+.country-code {
+  direction: rtl;
+  text-align: right;
+  padding-right: 10px;
+}
+
+.country-code::-ms-expand {
+  display: none;
+}
+
+.country-code {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-position: left 10px center;
+  background-repeat: no-repeat;
+  background-image: url("data:image/svg+xml;utf8,<svg fill='black' height='14' width='14' viewBox='0 0 20 20' xmlns='http://www.w3.org/2000/svg'><path d='M5 8l5 5 5-5H5z'/></svg>");
+}
+
+.login-wrapper .login-btn {
+  background-color: #1d3a77;
+  font-size: 20px;
+  padding: 9px 12px 12px;
+}
+
+.login-wrapper .login-btn:hover {
+  background-color: #255acb;
+}
+
+.login-special-password-input {
+  direction: rtl;
+  width: 100%;
+  background-color: #fafafa;
+  border: 1px solid #e9e9e9;
+  border-radius: 12px;
+  padding: 14px 20px;
+  font-size: 16px;
+  height: 60px;
+  margin-bottom: 2%;
+  transition: all 0.25s ease;
+}
+.login-account-text {
+  font-size: 20px;
+  font-weight: bold;
+}
+@media (max-width: 768px) {
+  .login-wrapper .login-form {
+    width: 100%;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+  .login-image {
+    display: none;
+  }
+}

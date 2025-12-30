@@ -1,0 +1,45 @@
+.ayni-wrapper {
+  direction: rtl;
+  max-width: 650px;
+  padding: 40px 10px;
+  margin: auto;
+}
+
+.ayni-title {
+  font-weight: 700;
+  font-size: 22px;
+  margin-bottom: 40px;
+}
+
+.label-title {
+font-weight: 600;
+    margin-bottom: 13px;
+    display: block;
+    font-size: 20px;
+}
+
+.input-box {
+  background: #F8F8F8;
+  border: 1px solid #ECECEC !important;
+  padding: 15px !important;
+  border-radius: 10px !important;
+  height: 50px;
+  font-size: 15px;
+}
+
+.small-box {
+  height: 50px !important;
+}
+
+.textarea-box {
+  height: auto !important;
+  resize: none;
+}
+
+.submit-btn {
+  background: #0A2A57 !important;
+  padding: 14px;
+  border-radius: 10px !important;
+  border: none;
+  font-size: 18px;
+}
