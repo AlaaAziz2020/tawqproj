@@ -122,20 +122,22 @@ export default function Offerstawqnajah() {
   const navigate = useNavigate();
 
   return (
-    <div className="offers-wrapper2 mb-5 pb-5" style={{marginTop: "130px"}} >
-      <div className=" container">
+    <div className="offers-wrapper2  pb-5" style={{marginTop: "0px"}} >
+      <div className=" container mt-5 ">
         <div className="row">
+          {/* <h1 className="offers-heading">عروض طوق نجاة</h1> */}
 
-        </div>
         {sections.map((sec, index) => (
           <section key={index} className="">
-            <div className="offerscustomer-products-header " >
+
+            <div className="offerscustomer-products-header3 " >
+              
               <h2 className="offerscustomer-products-title ">{sec.title}</h2>
               {/* <span className="customer-view-more">رؤية المزيد</span> */}
             </div>
 
             {/* الكروت Bootstrap Responsive: change to col-md-3 for 4 columns at md and up */}
-            <div className="row g-4 ">
+            <div className="row g-4 mb-5">
               {sec.products.map((p) => (
                 <div key={p.id} className="col-12 col-sm-6 col-md-3  pt-4">
                   <ProductCard p={p} navigate={navigate} />
@@ -144,6 +146,7 @@ export default function Offerstawqnajah() {
             </div>
           </section>
         ))}
+      </div>
       </div>
     </div>
   );
@@ -156,7 +159,7 @@ export default function Offerstawqnajah() {
 function ProductCard({ p, navigate }) {
   return (
     <Link
-      to="/offerstawqnajah"
+      to="/offerstawq"
       state={{ product: p }}
       className="offerscustomer-product-card d-block h-100 d-flex flex-column "
       style={{ textDecoration: "none", color: "inherit" }}

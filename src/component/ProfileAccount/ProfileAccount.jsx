@@ -28,7 +28,7 @@ import { Link } from "react-router-dom";
    ];
 
    return (
-     <div className="profile-wrapper container mt-5 " >
+     <div className="profileacc-wrapper container mt-5 " >
    <div className="m-marketing-sidebar  mb-5 col-md-6">
 
             <Link to="/profileaccount" className="side-btn active white mt-5 ">

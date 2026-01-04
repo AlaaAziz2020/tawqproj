@@ -27,8 +27,8 @@ export default function Offers() {
   const navigate = useNavigate();
 
   return (
-    <div className="offersproducts-wrapper1 ">
-      <div className="offers container ">
+    <div className="offersproducts-wrapper1  ">
+      <div className="offers container  ">
         {sections.map((sec, index) => (
           <section key={index} className="">
             <div className="offerscustomer-products-header1  ">

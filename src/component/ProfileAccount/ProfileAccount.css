@@ -1,4 +1,4 @@
-.profile-wrapper {
+.profileacc-wrapper {
   display: flex;
   flex-direction: row;
   direction: rtl;
@@ -167,7 +167,17 @@
 .input-icon { position: absolute; top: 50%; right: 15px; width: 22px; transform: translateY(-50%); }
 
 .save-wrapper {  margin-top: 25px; }
-.save-btn { background: #FF580E; color: #fff; border: none; border-radius: 12px; font-size: 20px; padding: 5px 2px; cursor: pointer; width: 100%; max-width: 150px; }
+.save-btn { 
+  background: #FF580E; color: #fff; border: none;
+   border-radius: 12px; 
+   font-size: 20px;
+    padding: 5px 2px;
+     cursor: pointer;
+      width: 100%;
+       max-width: 150px; 
+           margin-bottom: 25%;
+
+      }
 .phone-field {
   display: flex;
   width: 100%;
@@ -231,28 +241,45 @@
 
 /* ===== Responsive ===== */
 @media (max-width: 1024px) {
-  .profile-wrapper { flex-direction: column; align-items: center; margin: 40px 20px; }
+  .profileacc-wrapper { flex-direction: column; align-items: center; margin: 40px 20px; }
   .profile-content { margin-right: 0; width: 100%; }
-  .marketing-sidebar { width: 100%; flex-direction: row; flex-wrap: wrap; justify-content: center; gap: 10px; margin-bottom: 30px; }
-  .side-btn { flex: 1 1 45%; font-size: 18px; padding: 14px }
+  .m-marketing-sidebar { width: 100%; flex-direction: row; flex-wrap: wrap; justify-content: center; gap: 10px; margin-bottom: 30px; }
+  .side-btn {
+     /* flex: 1 1 45%;  */
+     font-size: 18px; 
+     padding: 14px;
+     display: flex;
+     justify-content: flex-start;
+   }
 }
 
 @media (max-width: 768px) {
-  .profile-wrapper { gap: 20px; margin-top: 20px; margin-bottom: 40px; }
+  .profileacc-wrapper { gap: 20px; margin-top: 20px; margin-bottom: 40px; }
   .avatar-circle { width: 140px; height: 140px; }
   .form-input { padding: 12px 40px; font-size: 16px; }
-  .side-btn { flex: 1 1 100%; font-size: 16px; padding: 12px; }
+  .side-btn { 
+        flex: 1 1 100%;
+        font-size: 16px;
+        padding: 12px;
+        display: flex;
+        justify-content: flex-start;
+     }
   .save-wrapper {
     text-align: center;
   }
 }
 
 @media (max-width: 480px) {
-  .profile-wrapper .text-dark{
+  .profileacc-wrapper .text-dark{
         width: 100%;
 
   }
   .avatar-circle { width: 120px; height: 120px; }
   .form-input { padding: 10px 35px; font-size: 14px; }
-  .side-btn { font-size: 14px; padding: 10px; }
+  .side-btn { 
+    font-size: 14px; 
+    padding: 10px; 
+    display: flex;
+    justify-content: flex-start;
+  }
 }

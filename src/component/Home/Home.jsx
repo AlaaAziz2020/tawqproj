@@ -101,7 +101,7 @@ export default function Home() {
   <i className="fa-solid fa-arrow-left ms-2"></i>
 </button>
 
-            <Link to="/offerstawqnajah" className="btn-text">
+            <Link to="/offerstawq" className="btn-text">
   شاهد جميع المنتجات
 </Link>
           </div>

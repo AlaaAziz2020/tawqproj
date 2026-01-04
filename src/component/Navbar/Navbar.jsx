@@ -60,7 +60,7 @@ export default function Navbar() {
     { icon: <FaHandshake />, text: "الشراكات المجتمعية", path: "/communitypartnerships" },
     { icon: <FaUsers />, text: "المسوّقين", path: "/marketers" },
     { icon: <FaStore />, text: "التجار", path: "/sellers" },
-    { icon: <FaGift />, text: "عروض طوق نجاة", path: "/productssection" },
+    { icon: <FaGift />, text: "عروض طوق نجاة", path: "/offerstawq" },
     { icon: <FiUser />, text: "معلومات الحساب", path: "/profileaccount" },
     { icon: <CiCreditCard1 />, text: "الحساب البنكي", path: "/bankaccount" },
     { icon: <FaBullhorn />, text: "تسويق", path: "/marketing" },
@@ -90,7 +90,7 @@ export default function Navbar() {
             <NavLink to="/communitypartnerships" className="tn-nav-link">الشراكات المجتمعية</NavLink>
             <NavLink to="/marketers" className="tn-nav-link">المسوّقين</NavLink>
             <NavLink to="/sellers" className="tn-nav-link">التجار</NavLink>
-            <NavLink to="/offerstawqnajah" className="tn-nav-link">عروض طوق نجاة</NavLink>
+            <NavLink to="/offerstawq" className="tn-nav-link">عروض طوق نجاة</NavLink>
           </Nav>
 
           {/* HAMBURGER */}

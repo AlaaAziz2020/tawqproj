@@ -119,6 +119,7 @@ import SellerFinancialDashboard from './component/SellerFinancialDashboard/Selle
 import SellerProductsSection from './component/SellerProductsSection/SellerProductsSection';
 import SellerAbouttawq from './component/SellerAbouttawq/SellerAbouttawq';
 import Offerstawqnajah from './component/Offerstawqnajah/Offerstawqnajah';
+import OffersTawq from './component/OffersTawq/OffersTawq';
 import CommunityPartnerships from './component/CommunityPartnerships/CommunityPartnerships';
 import Marketers from './component/Marketers/Marketers';
 import SuccessPartners from './component/SuccessPartners/SuccessPartners';
@@ -138,6 +139,7 @@ import SellerBurgerOffer from './component/SellerBurgerOffer/SellerBurgerOffer';
 import SellerMobileOffer from './component/SellerMobileOffer/SellerMobileOffer';
 import SellerMyStore from './component/SellerMyStore/SellerMyStore';
 import Offers from './component/Offers/Offers';
+import WinterDetails from './component/WinterDetails/WinterDetails';
 
 const router = createBrowserRouter([
   {
@@ -211,6 +213,7 @@ const router = createBrowserRouter([
 { path: 'favorites', element: <Favorites /> },
 {path:'categorydetails',element:<CategoryDetails/>},
 {path:'winterjacketshirt',element:<WinterjacketDetails/>},
+
 //  {path:'offertawq',element:<OfferTawq/>},
 // { path:"register", element:<Register />} ,
 {path:'productselectronis',element:<ProductsElectronics/>},
@@ -220,13 +223,14 @@ const router = createBrowserRouter([
 {path:'categoriesslider',element:<CategoriesSlider/>},
 {path:'abouttawq' ,element:<Abouttawq/>},
 {path:'offers',element:<Offers/>},
-//  {path:"offerstwq",element:<OffersTawq/>},
+  {path:"offerstawq",element:<OffersTawq/>},
 {path:"offerstawqnajah",element:<Offerstawqnajah/>},
 {path:"successpartners",element:<SuccessPartners/>},
 {path:'sellers',element:<Sellers/>},
 { path:'sellersdetails/:id', element:<SellersDetails/> },
 {path:'scrolltop',element:<ScrollTop/>},
 {path:'alloffers',element:<AllOffers/>},
+{path:'winterdetails',element:<WinterDetails/>},
 {path:'/products/:category',element:<AllProductsByCategory/>},
 {path:'privacy',element:<Privacy/>}
 

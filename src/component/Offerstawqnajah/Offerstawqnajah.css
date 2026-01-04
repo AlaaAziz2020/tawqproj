@@ -3,12 +3,15 @@
     padding-top: 14%;
 
  }
+ .offers-heading{
+  margin-top: 11%;
+ }
  .offerscustomer-products-header {
 display: flex;
     justify-content: space-between;
     align-items: center;
     direction: rtl;
-    margin-top: 5%;
+    margin-top: 3%;
  }
 
 .offerscustomer-products-title {
@@ -277,7 +280,9 @@ width: 7%;
 @media (max-width: 576px) {
   .offersproducts-wrapper {
         padding-top: 41%;
-
+  }
+  .offers-heading{
+    padding-top: 15%;
   }
   .customer-products-grid {
     grid-template-columns: 1fr;

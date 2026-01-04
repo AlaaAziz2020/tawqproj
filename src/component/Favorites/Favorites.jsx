@@ -2,6 +2,7 @@ import React from 'react'
 import '../Favorites/Favorites.css'
 import wintershirt from '../../assets/wintershirt.jpg'
 import carticon from '../../assets/cartsvg.svg'
+import { Link } from 'react-router-dom'
 
 export default function Favorites() {
   return (
@@ -23,17 +24,20 @@ export default function Favorites() {
                 <tr key={i} className="brdr">
 
                   {/* PRODUCT CELL */}
-                  <td>
-                    <div className="prod-info">
-                      <img className="shirt" src={wintershirt} alt="" />
-                      <div className="prod-text">
-                        <p className="prod-name">تيشيرت شتوي</p>
-                        <p className="prod-rate">
-                          <i className="fa fa-star"></i> 4.9
-                        </p>
-                      </div>
-                    </div>
-                  </td>
+            <td>
+  <Link to="/winterdetails" className="prod-link">
+    <div className="prod-info">
+      <img className="shirt" src={wintershirt} alt="" />
+      <div className="prod-text ext-dark text-decoration-none">
+        <p className="prod-name text-dark text-decoration-none">تيشيرت شتوي</p>
+        <p className="prod-rate">
+          <i className="fa fa-star"></i> 4.9
+        </p>
+      </div>
+    </div>
+  </Link>
+</td>
+
 
                   {/* PRICE */}
                   <td className="cprice pt-5">100 ر.س</td>

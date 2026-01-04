@@ -15,10 +15,10 @@ export default function SuccessPartners() {
   ];
 
   return (
-    <section className="partners-section mt-5 ">
-      <h2 className="partners-title text-dark d-flex justify-content-start px-5 mx-5">شركاء النجاح</h2>
+    <section className="partners-section mt-5 pb-5">
+      <h2 className="partners-title text-dark d-flex justify-content-start px-5 mx-5  ">شركاء النجاح</h2>
 
-      <div className="partners-grid ">
+      <div className="partners-grid pb-5">
         {partners.map((item, index) => (
 <div className="partner-card" key={index}>
   <div className="partner-logo">
