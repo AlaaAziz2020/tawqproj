@@ -11,7 +11,6 @@ import ResetPassword from './component/ResetPassword/ResetPassword';
 import ForgetPassword from './component/ForgetPassword/ForgetPassword';
 import AccountType from './component/AccountType/AccountType';
 import Admin from './component/Admin/Admin';
-
 import Services from './component/Services/Services';
 import RelatedProducts from './component/RelatedProducts/RelatedProducts';
 import RelatedActivites from './component/RelatedActivites/RelatedActivites';
@@ -140,6 +139,7 @@ import SellerMobileOffer from './component/SellerMobileOffer/SellerMobileOffer';
 import SellerMyStore from './component/SellerMyStore/SellerMyStore';
 import Offers from './component/Offers/Offers';
 import WinterDetails from './component/WinterDetails/WinterDetails';
+import Slider from './component/Slider/Slider';
 
 const router = createBrowserRouter([
   {
@@ -221,6 +221,7 @@ const router = createBrowserRouter([
 {path:'productskitchen',element:<ProductsKitchen/>},
 {path:'fsuccess',element:<FSuccess/>},
 {path:'categoriesslider',element:<CategoriesSlider/>},
+{path:'slider',element:<Slider/>},
 {path:'abouttawq' ,element:<Abouttawq/>},
 {path:'offers',element:<Offers/>},
   {path:"offerstawq",element:<OffersTawq/>},

@@ -68,6 +68,7 @@
     font-weight: bold;
 
   }
+  
 /* ===================== Responsive Design for Screens from 320px to 768px ===================== */
 /* ===================== Responsive Design for Screens from 320px to 768px ===================== */
 
@@ -95,9 +96,9 @@
   }
 
   .customer-category-box {
-    width: 100%; /* Full-width on small screens */
-    max-width: 180px; /* Set a max width */
-    height: 126px; /* Adjust height dynamically */
+    width: 70%; /* Full-width on small screens */
+    max-width: 150px; /* Set a max width */
+    height: 106px; /* Adjust height dynamically */
     padding: 10px; /* Reduce padding */
     font-size: 14px; /* Smaller font size */
     border-radius: 10px; /* Slightly smaller corners */
@@ -106,7 +107,8 @@
     align-items: center;
     justify-content: center;
     gap: 8px; /* Reduce gaps between items inside the box */
-    margin-bottom: 20px; /* Reduce bottom margin */
+    /* margin-bottom: 20px;  */
+    margin: auto;
   }
 
   .customer-category-box img {
@@ -115,7 +117,9 @@
     object-fit: contain; /* Ensure proper fit */
     margin: 8px auto; /* Center image */
   }
-
+.swiper-horizontal > .swiper-pagination-bullets, .swiper-pagination-horizontal.swiper-pagination-bullets {
+display: none;
+}
   .customer-category-icon {
     font-size: 24px; /* Reduce icon size */
     margin-bottom: 5px; /* Smaller spacing under icon */
